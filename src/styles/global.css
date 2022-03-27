@@ -12,7 +12,7 @@
       var(--clr-secondary-s),
       var(--clr-secondary-l)
   );
-  --clr-tertiary: hsl(289, 89%, 70%);
+  --clr-tertiary: hsl(289, 89%, 62%);
   --clr-black: hsl(0, 0%, 8%);
   --clr-white: hsl(0, 0%, 98%);
   --clr-text: hsl(0, 0%, 75%);
@@ -310,7 +310,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: var(--space-xs);
+  gap: var(--space-s);
 }
 #intro p {
   font-weight: bold;
@@ -327,11 +327,12 @@ img {
 }
 #intro h1 {
   color: var(--clr-white);
+  line-height: 0.7;
 }
 #intro .button {
   display: block;
   padding: var(--space-s) var(--space-m);
-  margin-top: var(--space-m);
+  margin-top: var(--space-ml);
 }
 
 #projects {
@@ -611,10 +612,11 @@ img {
   cursor: pointer;
   font-size: calc(var(--font-size-m) * 1.2);
 }
-@media (min-width: 990px) {
+@media (min-width: 768px) {
   #contact form {
-    margin-left: var(--space-l);
-    margin-right: var(--space-l);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 35rem;
   }
 }
 

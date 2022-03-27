@@ -5,7 +5,7 @@ const ProjectObject = props => {
     const img_url = `/images/project_demos/${props.project.imgName}`
 
     return (
-        <li className="project slide-left">
+        <li className={`project ${props.animationClass}`}>
             <img alt={`${props.project.name} Demo`} src={img_url} />
 
             <section>

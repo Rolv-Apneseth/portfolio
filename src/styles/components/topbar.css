@@ -112,7 +112,7 @@
 @media (min-width: 990px) {
   .topbar:not(.active) {
     min-height: var(--space-l);
-    font-size: var(--font-size-ml);
+    font-size: var(--font-size-m);
   }
   .topbar:not(.active) .topbar-toggle {
     display: none;

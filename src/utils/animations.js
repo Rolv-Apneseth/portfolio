@@ -16,7 +16,7 @@ const enableScrollAnimations = () => {
 
     const observer = getIntersectionObserver({
         threshold: 0.7,
-        rootMargin: "-5% 50%",
+        rootMargin: "-2% 50%",
     })
 
     // Apply observer to elements

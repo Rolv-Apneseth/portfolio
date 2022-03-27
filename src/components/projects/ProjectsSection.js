@@ -7,8 +7,13 @@ const ProjectsSection = () => {
         <section id="projects">
             <h3 className="slide-left">Projects</h3>
             <ul>
-                {projects.map(project => (
-                    <ProjectObject project={project} key={project.key} />
+                {projects.map((project, index) => (
+                    <ProjectObject
+                        project={project}
+                        key={project.key}
+                        // Alternate animation
+                        animationClass={`slide-${index % 2 ? "right" : "left"}`}
+                    />
                 ))}
             </ul>
         </section>

@@ -137,7 +137,7 @@
         // prevent changes if mobile nav is open
         &:not(.active) {
             min-height: var(--space-l);
-            font-size: var(--font-size-ml);
+            font-size: var(--font-size-m);
 
             .topbar-toggle {
                 display: none;
