@@ -32,7 +32,7 @@ export const tags = {
     automation: "Automation",
     algorithms: "Algorithms",
     unittest: "Unit Tests",
-    webscraping: "Webscraping",
+    webscraping: "Web Scraping",
 }
 
 export const projects = [
@@ -70,7 +70,7 @@ export const projects = [
         "daily_hn",
         "daily_hn.png",
         [
-            'A command line tool for displaying and opening links to the current best stories from <a target="_blank" rel="noreferrer" href="news.ycombinator.com">news.ycombinator.com</a> (Hacker News). It works by scraping the best stories page and displaying it for the user using a curses library UI.',
+            'A command line tool for displaying and opening links to the current best stories from <a target="_blank" rel="noreferrer" href="https://news.ycombinator.com">news.ycombinator.com</a> (Hacker News). It works by scraping the best stories page and displaying it for the user using a curses library UI.',
             'This handy tool is automatically tested using Pytest and GitHub Actions, and is available as a PyPi package <a target="_blank" rel="noreferrer" href="https://pypi.org/project/daily-hn/">here!</a>',
         ],
         "https://github.com/Rolv-Apneseth/daily_hn",

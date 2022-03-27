@@ -1,49 +1,40 @@
 import React from "react"
+import { uniqueId } from "underscore"
 import "../styles/components/socialLinks.css"
+
+class Link {
+    constructor(title, url) {
+        this.title = title
+        this.url = url
+        this.imgUrl = title.toLowerCase()
+        this.key = uniqueId("socialLink")
+    }
+}
+
+const urls = [
+    new Link("Github", "https://github.com/Rolv-Apneseth"),
+    new Link("Email", "mailto:rolv.apneseth@gmail.com"),
+    new Link("LinkedIn", "https://www.linkedin.com/in/rolv-apneseth-6b47401b5"),
+    new Link(
+        "StackOverflow",
+        "https://stackoverflow.com/users/14316282/rolv-apneseth"
+    ),
+]
 
 const SocialLinks = () => {
     return (
         <nav className="social-links slide-right delay-7">
             <ul>
-                <li>
-                    <a
-                        href="https://github.com/Rolv-Apneseth"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <img src="./images/github.svg" alt="GitHub" />
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://github.com/Rolv-Apneseth"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <img src="./images/email.svg" alt="Email" />
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://github.com/Rolv-Apneseth"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <img src="./images/linkedin.svg" alt="LinkedIn" />
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://stackoverflow.com/users/14316282/rolv-apneseth"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <img
-                            src="./images/stackoverflow.svg"
-                            alt="StackOverflow"
-                        />
-                    </a>
-                </li>
+                {urls.map(item => (
+                    <li key={item.key}>
+                        <a href={item.url} target="_blank" rel="noreferrer">
+                            <img
+                                src={`./images/${item.imgUrl}.svg`}
+                                alt={item.title}
+                            />
+                        </a>
+                    </li>
+                ))}
             </ul>
         </nav>
     )
