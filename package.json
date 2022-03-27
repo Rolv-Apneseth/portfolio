@@ -1,0 +1,31 @@
+{
+  "name": "rolv-apneseth-dev-portfolio",
+  "private": true,
+  "description": "Portfolio website",
+  "version": "0.0.0",
+  "license": "GPLv3.0",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.7.1",
+    "gatsby-plugin-react-helmet": "^5.7.0",
+    "gatsby-plugin-robots-txt": "^1.7.0",
+    "gatsby-plugin-sitemap": "^5.7.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "underscore": "^1.13.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Rolv-Apneseth/portfolio.git",
+  "author": "Rolv-Apneseth <rolv.apneseth@gmail.com>"
+}

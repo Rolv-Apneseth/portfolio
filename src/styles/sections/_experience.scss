@@ -1,0 +1,52 @@
+@use "../components/hover_link" as *;
+
+#experience {
+    .experience-object {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xs);
+
+        header {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+
+            h4 {
+                font-size: var(--font-size-ml);
+                font-weight: 600;
+                color: var(--clr-white);
+
+                span:first-child {
+                    color: var(--clr-secondary);
+                }
+                span:nth-child(2) {
+                    @include hoverLink;
+                }
+            }
+            h5 {
+                color: var(--clr-white);
+                font-size: calc(var(--font-size-ml) - 0.3rem);
+                font-style: italic;
+            }
+        }
+
+        ul {
+            margin-top: var(--space-s);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: var(--space-xs);
+
+            li {
+                display: flex;
+                gap: var(--space-m);
+
+                &::before {
+                    content: "▹";
+                    position: relative;
+                    color: var(--clr-secondary);
+                }
+            }
+        }
+    }
+}

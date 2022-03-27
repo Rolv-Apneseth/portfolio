@@ -1,0 +1,21 @@
+.button {
+  width: fit-content;
+  border: var(--thickness-s) solid var(--clr-secondary);
+  border-radius: var(--space-xs);
+  padding: var(--space-xs) var(--space-s);
+  transition-property: background-color, opacity, transform;
+  transition-duration: var(--transition-duration);
+
+  background-color: transparent;
+  color: var(--clr-white);
+  font-weight: bold;
+
+  &:hover {
+    background-color: hsla(
+      var(--clr-secondary-h),
+      var(--clr-secondary-s),
+      calc(var(--clr-secondary-l) - 10%),
+      0.1
+    );
+  }
+}

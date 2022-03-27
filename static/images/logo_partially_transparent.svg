@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="279.80804"
+   height="284.48932"
+   viewBox="0 0 74.032545 75.271132"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <rect
+       x="289.439"
+       y="448.56543"
+       width="150.957"
+       height="178.00594"
+       id="rect12061" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-56.160009,-73.204691)">
+    <path
+       style="fill:#231021;fill-opacity:0.60000002;stroke:#e8cae3;stroke-width:16.06;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path86409"
+       d="M 395.373,101.77886 245.26013,190.32237 93.522766,104.59257 91.898273,-69.680745 242.01114,-158.22425 393.7485,-72.49445 Z"
+       transform="matrix(0.23162641,0,0,0.20504798,36.743834,107.54943)" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.46058572,0,0,0.41080846,-53.291928,-108.944)"
+       id="text12059"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;line-height:2;font-family:'FiraCode Nerd Font';-inkscape-font-specification:'FiraCode Nerd Font Bold';white-space:pre;shape-inside:url(#rect12061);fill:#e7cbe4;fill-opacity:1;stroke:none;stroke-width:0.585441;stroke-miterlimit:4;stroke-dasharray:none"><tspan
+         x="289.43945"
+         y="568.56641"
+         id="tspan103427"><tspan
+           style="font-weight:500;-inkscape-font-specification:'FiraCode Nerd Font Medium'"
+           id="tspan103425">R</tspan></tspan></text>
+  </g>
+</svg>

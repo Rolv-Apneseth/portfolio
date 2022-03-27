@@ -1,0 +1,29 @@
+footer {
+  text-align: center;
+  padding: var(--space-m) 0;
+}
+footer h5,
+footer h6 {
+  font-size: var(--font-size-m);
+}
+footer a {
+  position: relative;
+}
+footer a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: var(--clr-white);
+  transition: width var(--transition-duration);
+  height: var(--thickness-s);
+}
+footer a:hover {
+  outline: none;
+}
+footer a:hover::before {
+  width: 100%;
+}
+
+/*# sourceMappingURL=footer.css.map */

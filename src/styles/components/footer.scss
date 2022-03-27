@@ -1,0 +1,15 @@
+@use "./hover_link" as *;
+
+footer {
+    text-align: center;
+    padding: var(--space-m) 0;
+
+    h5,
+    h6 {
+        font-size: var(--font-size-m);
+    }
+
+    a {
+        @include hoverLink;
+    }
+}

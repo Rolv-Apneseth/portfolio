@@ -1,0 +1,41 @@
+$break-point-xs: 576px;
+$break-point-s: 768px;
+$break-point-m: 990px;
+$break-point-l: 1200px;
+$break-point-xl: 1400px;
+
+@mixin small-device-up {
+    @media (min-width: #{$break-point-xs}) {
+        @content;
+    }
+}
+
+@mixin tablet-up {
+    @media (min-width: #{$break-point-s}) {
+        @content;
+    }
+}
+
+@mixin desktop-small-up {
+    @media (min-width: #{$break-point-m}) {
+        @content;
+    }
+}
+
+@mixin desktop-medium-up {
+    @media (min-width: #{$break-point-l}) {
+        @content;
+    }
+}
+
+@mixin desktop-large-up {
+    @media (min-width: #{$break-point-xl}) {
+        @content;
+    }
+}
+
+@mixin tablet-down {
+    @media (max-width: #{$break-point-s - 1}) {
+        @content;
+    }
+}

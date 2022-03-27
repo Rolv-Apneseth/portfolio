@@ -1,0 +1,75 @@
+@use "./mediaQueries" as *;
+
+:root {
+    // COLOURS
+    --clr-main-h: 216;
+    --clr-main-s: 65%;
+    --clr-main-l: 11%;
+    --clr-main: hsl(var(--clr-main-h), var(--clr-main-s), var(--clr-main-l));
+
+    --clr-secondary-h: 309;
+    --clr-secondary-s: 91%;
+    --clr-secondary-l: 80%;
+    --clr-secondary: hsl(
+        var(--clr-secondary-h),
+        var(--clr-secondary-s),
+        var(--clr-secondary-l)
+    );
+
+    --clr-tertiary: hsl(289, 89%, 70%);
+    --clr-black: hsl(0, 0%, 8%);
+    --clr-white: hsl(0, 0%, 98%);
+    --clr-text: hsl(0, 0%, 75%);
+
+    // Hex to filter found here: https://codepen.io/sosuke/pen/Pjoqqp
+    --filter-white: invert(100%) sepia(6%) saturate(168%) hue-rotate(277deg)
+        brightness(112%) contrast(88%);
+
+    // FONT SIZES
+    --font-size-s: clamp(1rem, 2vw, 1.2rem);
+    --font-size-m: clamp(1.3rem, 3vw, 1.4rem);
+    --font-size-ml: clamp(1.7rem, 5.5vw, 1.8rem);
+    --font-size-l: clamp(2rem, 7vw, 2.5rem);
+    --font-size-xl: clamp(2.5rem, 10vw, 5rem);
+
+    // MEASUREMENTS
+    --thickness-s: 1px;
+    --thickness-m: 0.1rem;
+    --thickness-l: 0.2rem;
+    --thickness-xl: 0.4rem;
+
+    --space-xs: 0.5rem;
+    --space-s: 1rem;
+    --space-sm: 1.55rem;
+    --space-m: 2rem;
+    --space-ml: 3rem;
+    --space-lm: 3.5rem;
+    --space-l: 5rem;
+    --space-xl: 7.5rem;
+
+    --site-margins: var(--space-m);
+
+    // ANIMATIONS
+    --transition-duration: 150ms;
+    --animation-duration: 400ms;
+    --animation-delay-min: 100ms;
+    --animation-delay: 300ms;
+    --animation-move-distance: var(--space-s);
+
+    --time-s: 100ms;
+    --time-m: 200ms;
+    --time-l: 500ms;
+
+    // MEDIA QUERIES
+    @include small-device-up {
+        --site-margins: var(--space-lm);
+    }
+
+    @include tablet-up {
+        --site-margins: var(--space-xl);
+    }
+
+    @include desktop-small-up {
+        --site-margins: 15%;
+    }
+}
