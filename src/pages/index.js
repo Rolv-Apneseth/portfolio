@@ -6,14 +6,21 @@ import SocialLinks from "../components/SocialLinks"
 import ExperienceSection from "../components/experience/ExperienceSection"
 
 const Index = () => {
+    const introAnimation = "slide-left"
+    const sectionHeaderAnimation = "slide-up"
+
     return (
         <>
             <Layout>
                 <section id="intro">
-                    <p className="slide-left delay-1">Hey, I'm</p>
-                    <h2 className="slide-left delay-2">Rolv Apneseth</h2>
-                    <h1 className="slide-left delay-3">Software Developer</h1>
-                    <div className="slide-left delay-4">
+                    <p className={`${introAnimation} delay-1`}>Hey, I'm</p>
+                    <h2 className={`${introAnimation} delay-2`}>
+                        Rolv Apneseth
+                    </h2>
+                    <h1 className={`${introAnimation} delay-3`}>
+                        Software Developer
+                    </h1>
+                    <div className={`${introAnimation} delay-4`}>
                         <a
                             className="button"
                             href="https://github.com/Rolv-Apneseth"
@@ -25,16 +32,12 @@ const Index = () => {
                     </div>
                 </section>
 
-                {/* <section id="about">
-          <h3 className="slide-left">About</h3>
-        </section> */}
+                {<ProjectsSection headerAnimation={sectionHeaderAnimation} />}
 
-                {<ProjectsSection />}
-
-                {<ExperienceSection />}
+                {<ExperienceSection headerAnimation={sectionHeaderAnimation} />}
 
                 <section id="contact">
-                    <h3 className="slide-left">Contact</h3>
+                    <h3 className={sectionHeaderAnimation}>Contact</h3>
                     {<ContactForm />}
                 </section>
 

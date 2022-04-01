@@ -40,7 +40,7 @@
   --animation-duration: 400ms;
   --animation-delay-min: 100ms;
   --animation-delay: 300ms;
-  --animation-move-distance: var(--space-s);
+  --animation-move-distance: var(--space-m);
   --time-s: 100ms;
   --time-m: 200ms;
   --time-l: 500ms;
@@ -66,39 +66,48 @@
     opacity: 1 !important;
     transform: translateX(0) scale(1) !important;
   }
-  .animate.delay-0 {
+
+  .delay-0 {
     transition-delay: calc(var(--animation-delay) * (1 / 2));
     animation-delay: calc(var(--animation-delay) * (1 / 2));
   }
-  .animate.delay-1 {
+
+  .delay-1 {
     transition-delay: calc(var(--animation-delay) * (2 / 2));
     animation-delay: calc(var(--animation-delay) * (2 / 2));
   }
-  .animate.delay-2 {
+
+  .delay-2 {
     transition-delay: calc(var(--animation-delay) * (3 / 2));
     animation-delay: calc(var(--animation-delay) * (3 / 2));
   }
-  .animate.delay-3 {
+
+  .delay-3 {
     transition-delay: calc(var(--animation-delay) * (4 / 2));
     animation-delay: calc(var(--animation-delay) * (4 / 2));
   }
-  .animate.delay-4 {
+
+  .delay-4 {
     transition-delay: calc(var(--animation-delay) * (5 / 2));
     animation-delay: calc(var(--animation-delay) * (5 / 2));
   }
-  .animate.delay-5 {
+
+  .delay-5 {
     transition-delay: calc(var(--animation-delay) * (6 / 2));
     animation-delay: calc(var(--animation-delay) * (6 / 2));
   }
-  .animate.delay-6 {
+
+  .delay-6 {
     transition-delay: calc(var(--animation-delay) * (7 / 2));
     animation-delay: calc(var(--animation-delay) * (7 / 2));
   }
-  .animate.delay-7 {
+
+  .delay-7 {
     transition-delay: calc(var(--animation-delay) * (8 / 2));
     animation-delay: calc(var(--animation-delay) * (8 / 2));
   }
-  .animate.delay-8 {
+
+  .delay-8 {
     transition-delay: calc(var(--animation-delay) * (9 / 2));
     animation-delay: calc(var(--animation-delay) * (9 / 2));
   }
@@ -106,28 +115,42 @@
   .fade-in {
     opacity: 0;
     transition-duration: var(--animation-duration);
-    transition: opacity var(--animation-duration) ease-in;
+    transition-property: transform, opacity;
   }
 
   .slide-left {
     opacity: 0;
     transition-duration: var(--animation-duration);
-    transform: translateX(var(--animation-move-distance));
     transition-property: transform, opacity;
+    transform: translateX(var(--animation-move-distance));
   }
 
   .slide-right {
     opacity: 0;
     transition-duration: var(--animation-duration);
-    transform: translateX(calc(-1 * var(--animation-move-distance)));
     transition-property: transform, opacity;
+    transform: translateX(calc(-1 * var(--animation-move-distance)));
+  }
+
+  .slide-up {
+    opacity: 0;
+    transition-duration: var(--animation-duration);
+    transition-property: transform, opacity;
+    transform: translateY(var(--animation-move-distance));
+  }
+
+  .slide-down {
+    opacity: 0;
+    transition-duration: var(--animation-duration);
+    transition-property: transform, opacity;
+    transform: translateY(calc(-1 * var(--animation-move-distance)));
   }
 
   .grow {
     opacity: 0;
     transition-duration: var(--animation-duration);
-    transform: scale(0.1);
     transition-property: transform, opacity;
+    transform: scale(0.1);
   }
 }
 html {

@@ -2,10 +2,10 @@ import React from "react"
 import ProjectObject from "./ProjectObject"
 import { projects } from "./projects"
 
-const ProjectsSection = () => {
+const ProjectsSection = props => {
     return (
         <section id="projects">
-            <h3 className="slide-left">Projects</h3>
+            <h3 className={props.headerAnimation}>Projects</h3>
             <ul>
                 {projects.map((project, index) => (
                     <ProjectObject

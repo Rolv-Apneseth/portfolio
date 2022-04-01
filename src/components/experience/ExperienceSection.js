@@ -2,10 +2,10 @@ import React from "react"
 import { experiences } from "./experience"
 import ExperienceObject from "./ExperienceObject"
 
-const ExperienceSection = () => {
+const ExperienceSection = props => {
     return (
         <section id="experience">
-            <h3 className="slide-left">Experience</h3>
+            <h3 className={props.headerAnimation}>Experience</h3>
             <ul>
                 {experiences.map((experience, index) => (
                     <ExperienceObject

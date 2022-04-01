@@ -1,38 +1,46 @@
 @media (prefers-reduced-motion: no-preference) {
-  .animate {
-    opacity: 1 !important;
-    transform: translateX(0) scale(1) !important;
-
-    @for $i from 0 through 8 {
-      &.delay-#{$i} {
-        transition-delay: calc(var(--animation-delay) * (#{$i + 1} / 2));
-        animation-delay: calc(var(--animation-delay) * (#{$i + 1} / 2));
-      }
+    // Activation class
+    .animate {
+        opacity: 1 !important;
+        transform: translateX(0) scale(1) !important;
     }
-  }
 
-  @mixin transition-base {
-    opacity: 0;
-    transition-duration: var(--animation-duration);
-  }
+    // Delays
+    @for $i from 0 through 8 {
+        .delay-#{$i} {
+            transition-delay: calc(var(--animation-delay) * (#{$i + 1} / 2));
+            animation-delay: calc(var(--animation-delay) * (#{$i + 1} / 2));
+        }
+    }
 
-  .fade-in {
-    @include transition-base();
-    transition: opacity var(--animation-duration) ease-in;
-  }
-  .slide-left {
-    @include transition-base();
-    transform: translateX(var(--animation-move-distance));
-    transition-property: transform, opacity;
-  }
-  .slide-right {
-    @include transition-base();
-    transform: translateX(calc(-1 * var(--animation-move-distance)));
-    transition-property: transform, opacity;
-  }
-  .grow {
-    @include transition-base();
-    transform: scale(0.1);
-    transition-property: transform, opacity;
-  }
+    // Animations
+    @mixin animation-base {
+        opacity: 0;
+        transition-duration: var(--animation-duration);
+        transition-property: transform, opacity;
+    }
+
+    .fade-in {
+        @include animation-base();
+    }
+    .slide-left {
+        @include animation-base();
+        transform: translateX(var(--animation-move-distance));
+    }
+    .slide-right {
+        @include animation-base();
+        transform: translateX(calc(-1 * var(--animation-move-distance)));
+    }
+    .slide-up {
+        @include animation-base();
+        transform: translateY(var(--animation-move-distance));
+    }
+    .slide-down {
+        @include animation-base();
+        transform: translateY(calc(-1 * var(--animation-move-distance)));
+    }
+    .grow {
+        @include animation-base();
+        transform: scale(0.1);
+    }
 }

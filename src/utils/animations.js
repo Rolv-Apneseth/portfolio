@@ -1,4 +1,11 @@
-const ANIMATIONS = ["fade-in", "slide-left", "slide-right", "grow"]
+const ANIMATIONS = [
+    "fade-in",
+    "slide-left",
+    "slide-right",
+    "slide-up",
+    "slide-down",
+    "grow",
+]
 
 const enableScrollAnimations = () => {
     // Intersection observer
@@ -6,10 +13,11 @@ const enableScrollAnimations = () => {
         return new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) {
-                    entry.target.classList.remove("animate")
-                } else {
-                    entry.target.classList.add("animate")
+                    return
                 }
+
+                entry.target.classList.add("animate")
+                observer.unobserve(entry.target)
             })
         }, options)
     }
