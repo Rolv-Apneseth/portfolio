@@ -91,6 +91,7 @@
   width: 100%;
 }
 .topbar .topbar-toggle {
+  z-index: 1000;
   width: var(--space-lm);
   height: calc(var(--space-lm));
   background-color: transparent;
