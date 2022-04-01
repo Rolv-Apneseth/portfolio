@@ -35,7 +35,7 @@
   --space-lm: 3.5rem;
   --space-l: 5rem;
   --space-xl: 7.5rem;
-  --site-margins: var(--space-m);
+  --site-margins: var(--space-sm);
   --transition-duration: 150ms;
   --animation-duration: 400ms;
   --animation-delay-min: 100ms;
