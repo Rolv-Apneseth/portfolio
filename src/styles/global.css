@@ -262,7 +262,7 @@ main {
   position: relative;
   transition: filter var(--animation-duration);
   margin: 0 var(--site-margins);
-  overflow-x: hidden;
+  overflow-x: visible;
 }
 main.blur {
   filter: blur(0.75rem) brightness(45%);
