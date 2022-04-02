@@ -6,7 +6,7 @@ import SocialLinks from "../components/SocialLinks"
 import ExperienceSection from "../components/experience/ExperienceSection"
 
 const Index = () => {
-    const introAnimation = "slide-left"
+    const introAnimation = "slide-up"
     const sectionHeaderAnimation = "slide-up"
 
     return (
