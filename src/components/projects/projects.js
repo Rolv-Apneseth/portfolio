@@ -38,7 +38,7 @@ export const tags = {
 export const projects = [
     new Project(
         "Just-A-Tracker",
-        "just-a-tracker.png",
+        "just-a-tracker.webp",
         [
             "A web application which allows users to track issues for different projects, as well as add other users to workspaces and comment on specific issues for better communication with a team.",
             "Please note that the live demo is hosted on Heroku and may take a minute to start up on the first load.",
@@ -68,7 +68,7 @@ export const projects = [
     ),
     new Project(
         "daily_hn",
-        "daily_hn.png",
+        "daily_hn.webp",
         [
             'A command line tool for displaying and opening links to the current best stories from <a target="_blank" rel="noreferrer" href="https://news.ycombinator.com">news.ycombinator.com</a> (Hacker News). It works by scraping the best stories page and displaying it for the user using a curses library UI.',
             'This handy tool is automatically tested using Pytest and GitHub Actions, and is available as a PyPi package <a target="_blank" rel="noreferrer" href="https://pypi.org/project/daily-hn/">here!</a>',
@@ -79,7 +79,7 @@ export const projects = [
     ),
     new Project(
         "Pathfind Visualiser",
-        "pathfind-visualiser.png",
+        "pathfind-visualiser.webp",
         [
             "A pathfinding algorithm visualiser, written in Python and visualised with the help of the Pygame library.",
             "With this program you can see different pathfinding algorithms in action! It also has algorithms for generating different kinds of mazes so the user can see how the algorithms behave under different conditions.",
@@ -90,7 +90,7 @@ export const projects = [
     ),
     new Project(
         "Auto Folder Sorter",
-        "auto-folder-sort.png",
+        "auto-folder-sort.webp",
         [
             "A Python script which can sort (and keep sorted) any given number of folders, either by file type or date of modification.",
             "This script can be easily run in the background and keep, for example, your Downloads folder neatly sorted by file type so that whenever you download a new file, it is immediately sorted into the folder matching it's corresponding file type (same can be done with date).",
