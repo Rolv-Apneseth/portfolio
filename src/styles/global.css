@@ -334,29 +334,30 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: var(--space-s);
 }
 #intro p {
   font-weight: bold;
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-ml);
   color: var(--clr-tertiary);
+  margin-bottom: var(--space-m);
 }
 #intro h2,
 #intro h1 {
   font-weight: 900;
   font-size: var(--font-size-xl);
+  line-height: 1;
 }
 #intro h2 {
   color: var(--clr-secondary);
+  margin-bottom: var(--space-s);
 }
 #intro h1 {
   color: var(--clr-white);
-  line-height: 0.7;
+  margin-bottom: var(--space-l);
 }
 #intro .button {
   display: block;
   padding: var(--space-s) var(--space-m);
-  margin-top: var(--space-ml);
 }
 
 #projects {
