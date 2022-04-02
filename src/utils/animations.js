@@ -22,15 +22,24 @@ const enableScrollAnimations = () => {
         }, options)
     }
 
-    const observer = getIntersectionObserver({
+    // Generate observers
+    const baseObserver = getIntersectionObserver({
         threshold: 0.7,
+        rootMargin: "-5% 50%",
+    })
+    const projectsObserver = getIntersectionObserver({
+        threshold: 0.5,
         rootMargin: "-2% 50%",
     })
 
-    // Apply observer to elements
+    // Apply observers to elements
     ANIMATIONS.forEach(className => {
         document.querySelectorAll(`.${className}`).forEach(element => {
-            observer.observe(element)
+            if (element.classList.contains("project")) {
+                projectsObserver.observe(element)
+            } else {
+                baseObserver.observe(element)
+            }
         })
     })
 }
