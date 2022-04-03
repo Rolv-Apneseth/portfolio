@@ -35,7 +35,7 @@ const ProjectObject = props => {
                         Code
                     </a>
 
-                    {props.project.demoURL ? (
+                    {props.project.demoURL && (
                         <a
                             className="button"
                             type="button"
@@ -45,7 +45,18 @@ const ProjectObject = props => {
                         >
                             Demo
                         </a>
-                    ) : undefined}
+                    )}
+                    {props.project.pypiURL && (
+                        <a
+                            className="button"
+                            type="button"
+                            href={props.project.pypiURL}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            PyPI
+                        </a>
+                    )}
                 </div>
             </section>
         </li>
