@@ -90,7 +90,7 @@ export const projects = [
         ],
         "https://github.com/Rolv-Apneseth/pathfind-visualiser",
         "",
-        "",
+        "https://pypi.org/project/pathfind-visualiser/",
         [tags.python, tags.algorithms, tags.pygame]
     ),
     new Project(
