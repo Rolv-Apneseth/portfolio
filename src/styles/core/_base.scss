@@ -4,6 +4,10 @@ html {
     font-family: "roboto", sans-serif;
     color: var(--clr-text);
     scroll-behavior: smooth;
+
+    p {
+        line-height: 1.5;
+    }
 }
 
 body {

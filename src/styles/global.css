@@ -250,6 +250,9 @@ html {
   color: var(--clr-text);
   scroll-behavior: smooth;
 }
+html p {
+  line-height: 1.5;
+}
 
 body {
   font-size: var(--font-size-m);
