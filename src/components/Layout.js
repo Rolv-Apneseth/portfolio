@@ -1,9 +1,9 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import { throttle } from "underscore"
 
-import Footer from "./Footer"
+import Head from "./Head"
 import Topbar from "./Topbar"
+import Footer from "./Footer"
 
 import enableScrollAnimations from "../utils/animations"
 import "../styles/global.css"
@@ -33,24 +33,7 @@ const Layout = props => {
 
     return (
         <React.Fragment>
-            <Helmet>
-                <title>Rolv Apneseth | Developer Portfolio</title>
-
-                <meta
-                    property="og:title"
-                    content="Rolv Apneseth | Developer Portfolio"
-                />
-                <meta
-                    name="description"
-                    content="Rolv Apneseth Developer Portfolio"
-                />
-                <meta
-                    property="og:description"
-                    content="Rolv Apneseth Developer Portfolio"
-                />
-
-                <link rel="shortcut icon" href="./favicon.svg" />
-            </Helmet>
+            <Head />
 
             <Topbar
                 active={topbarActive}
