@@ -19,6 +19,7 @@ export const tags = {
     js: "JavaScript",
     scss: "SASS",
     // Libraries/frameworks
+    sqlite: "SQLite",
     pyqt: "PyQt5",
     pygame: "Pygame",
     flask: "Flask",
@@ -61,13 +62,13 @@ export const projects = [
         "PS-Typer",
         "PS-Typer.png",
         [
-            "A GUI application made using the PyQt5 library for Python. With it, a user can practice getting faster at typing with almost endless sources of text to type out, and even keep track of their progress.",
-            "I use this program daily to improve my typing speed, and it has helped me go from 40 wpm to around 70 wpm.",
+            "A GUI application made using the PyQt5 library for Python. With it, a user can practice getting faster at typing with almost endless sources of text to type out, and even keep track of their progress. User w.p.m. scores are stored using an SQLite database accessed via the sqlite3 Python module.",
+            "I use this program daily to improve my typing speed, and it has helped me progress with ease as I can keep typing as long as I want and still not repeat any text, which was the main goal of this application.",
         ],
         "https://github.com/Rolv-Apneseth/ps-typer",
         "",
         "https://pypi.org/project/ps-typer/",
-        [tags.python, tags.pyqt, tags.pyqtgraph, tags.nltk]
+        [tags.python, tags.pyqt, tags.pyqtgraph, tags.sqlite, tags.nltk]
     ),
     new Project(
         "daily_hn",
