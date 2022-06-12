@@ -39,26 +39,6 @@ export const tags = {
 
 export const projects = [
     new Project(
-        "Just-A-Tracker",
-        "just-a-tracker.webp",
-        [
-            "A web application which allows users to track issues for different projects, as well as add other users to workspaces and comment on specific issues for better communication with a team.",
-            "Please note that the live demo is hosted on Heroku and may take a minute to start up on the first load.",
-        ],
-        "https://github.com/Rolv-Apneseth/just-a-tracker",
-        "https://just-a-tracker.herokuapp.com/login",
-        "",
-        [
-            tags.js,
-            tags.python,
-            tags.scss,
-            tags.jquery,
-            tags.bootstrap,
-            tags.flask,
-            tags.sqlalchemy,
-        ]
-    ),
-    new Project(
         "PS-Typer",
         "PS-Typer.png",
         [
@@ -81,6 +61,26 @@ export const projects = [
         "",
         "https://pypi.org/project/daily-hn/",
         [tags.python, tags.webscraping, tags.curses, tags.pytest]
+    ),
+    new Project(
+        "Just-A-Tracker",
+        "just-a-tracker.webp",
+        [
+            "A web application which allows users to track issues for different projects, as well as add other users to workspaces and comment on specific issues for better communication with a team.",
+            "Please note that the live demo is hosted on Heroku and may take a minute to start up on the first load.",
+        ],
+        "https://github.com/Rolv-Apneseth/just-a-tracker",
+        "https://just-a-tracker.herokuapp.com/login",
+        "",
+        [
+            tags.js,
+            tags.python,
+            tags.scss,
+            tags.jquery,
+            tags.bootstrap,
+            tags.flask,
+            tags.sqlalchemy,
+        ]
     ),
     new Project(
         "Pathfind Visualiser",
