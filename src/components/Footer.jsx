@@ -17,7 +17,7 @@ const Footer = () => {
             <h6>
                 Check out the code{" "}
                 <a
-                    href="https://github.com/Rolv-Apneseth"
+                    href="https://github.com/Rolv-Apneseth/portfolio"
                     target="_blank"
                     rel="noreferrer"
                 >
