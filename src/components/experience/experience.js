@@ -13,7 +13,7 @@ class Experience {
 export const experiences = [
     new Experience(
         "Junior Developer",
-        '<a target="_blank" rel="noreferrer" href="https://iclass-cms.com/">Bottletop Media (iClassCMS)</a>',
+        '<a target="_blank" rel="noreferrer" href="https://iclass-cms.com/iclass-platform/">Bottletop Media (iClassCMS)</a>',
         "September 2021 - Present",
         [
             "Maintain and make changes to websites for existing clients, using HTML, CSS, JavaScript and VB.Net",
