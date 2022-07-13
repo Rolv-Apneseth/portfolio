@@ -1,11 +1,17 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import preview from "../../static/images/preview.png"
+import favicon from "../../static/favicon.svg"
 
 const Head = () => {
     return (
         <Helmet>
-            <title>Rolv Apneseth | Developer Portfolio</title>
+            <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+            />
 
+            <title>Rolv Apneseth | Developer Portfolio</title>
             <meta
                 property="og:title"
                 content="Rolv Apneseth | Developer Portfolio"
@@ -18,8 +24,20 @@ const Head = () => {
                 property="og:description"
                 content="Rolv Apneseth Developer Portfolio"
             />
+            <meta property="og:url" content="https://rolvapneseth.com/" />
+            <meta property="og:image" content={preview} />
+            <meta property="og:locale" content="en_GB" />
+            <meta property="og:type" content="website" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="theme-color" content="#0a182e" />
 
-            <link rel="shortcut icon" href="./favicon.svg" />
+            <meta
+                name="keywords"
+                content="HTML, CSS, JavaScript, Python, React, Gatsby, Developer, Portfolio, Rolv, Apneseth"
+            />
+            <meta name="author" content="Rolv Apneseth" />
+
+            <link rel="shortcut icon" href={favicon} type="image/svg+xml" />
 
             {/* Preload fonts */}
             <link
