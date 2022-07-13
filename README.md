@@ -6,9 +6,11 @@
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bddd6f2c-9568-4933-a47f-f59a3e29540a/deploy-status)](https://app.netlify.com/sites/rolvapneseth/deploys)
 
+[![Site Preview](static/images/preview.png)](https://rolvapneseth.com)
+
 ## Description
 
-My personal developer portfolio, built from scratch using [Gatsby](https://www.gatsbyjs.com/), which can be found at [rolvapneseth.com](https://rolvapneseth.com)
+My personal developer portfolio, built from scratch using [Gatsby](https://www.gatsbyjs.com/), which can be found at [site] [rolvapneseth.com](site)
 
 ## Tools/Technologies
 
