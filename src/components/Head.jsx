@@ -5,7 +5,11 @@ import favicon from "../../static/favicon.svg"
 
 const Head = () => {
     return (
-        <Helmet>
+        <Helmet
+            htmlAttributes={{
+                lang: "en",
+            }}
+        >
             <meta
                 name="viewport"
                 content="width=device-width, initial-scale=1.0"
