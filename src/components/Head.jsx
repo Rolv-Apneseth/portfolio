@@ -18,12 +18,17 @@ const Head = () => {
             />
             <meta
                 name="description"
-                content="Rolv Apneseth Developer Portfolio"
+                content="Rolv Apneseth Developer Portfolio, displaying work experience
+                and previews of and links to all notable personal projects. Also linked
+                are GitHub, StackOverflow and LinkedIn pages."
             />
             <meta
                 property="og:description"
-                content="Rolv Apneseth Developer Portfolio"
+                content="Rolv Apneseth Developer Portfolio, displaying work experience
+                and previews of and links to all notable personal projects. Also linked
+                are GitHub, StackOverflow and LinkedIn pages."
             />
+            <link rel="canonical" href="https://rolvapneseth.com/" />
             <meta property="og:url" content="https://rolvapneseth.com/" />
             <meta property="og:image" content={preview} />
             <meta property="og:locale" content="en_GB" />
@@ -33,7 +38,8 @@ const Head = () => {
 
             <meta
                 name="keywords"
-                content="HTML, CSS, JavaScript, Python, React, Gatsby, Developer, Portfolio, Rolv, Apneseth"
+                content="HTML, CSS, JavaScript, Python, React, Gatsby, Developer,
+                Portfolio, Rolv, Apneseth, Software, Frontend, Backend, Code, Programmer"
             />
             <meta name="author" content="Rolv Apneseth" />
 
