@@ -4,5 +4,5 @@ stage = "pre_build"
 command = "sh"
 command_arguments = [
   "-c",
-  "echo '\nBUILDING TAILWIND...' && tailwindcss -i style/tailwind.css -o style/style.css && echo '\nBUILDING TAILWIND DONE\n'",
+  "echo '\nBUILDING TAILWIND...' && npx tailwindcss -i style/tailwind.css -o style/style.css && echo '\nBUILDING TAILWIND DONE\n'",
 ]
