@@ -1,0 +1,21 @@
+[package]
+name = "portfolio"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+console_error_panic_hook = "0.1"
+icondata = "0.3.0"
+leptos = { version = "0.6.9", features = ["csr", "nightly"] }
+leptos-use = "0.10.7"
+leptos_darkmode = "0.2.0"
+leptos_icons = "0.3.0"
+leptos_meta = { version = "0.6.9", features = ["csr", "nightly"] }
+reqwasm = "0.5"
+serde = { version = "1", features = ["derive"] }
+thiserror = "1"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 'z'

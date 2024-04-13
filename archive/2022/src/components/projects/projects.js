@@ -17,6 +17,7 @@ export const tags = {
     // Languages
     python: "Python",
     js: "JavaScript",
+    ts: "TypeScript",
     scss: "SASS",
     // Libraries/frameworks
     sqlite: "SQLite",
@@ -30,6 +31,8 @@ export const tags = {
     pytest: "Pytest",
     jquery: "JQuery",
     bootstrap: "Bootstrap",
+    gatsby: "Gatsby",
+    react: "React",
     // Concepts/skills
     automation: "Automation",
     algorithms: "Algorithms",
@@ -38,6 +41,18 @@ export const tags = {
 }
 
 export const projects = [
+    new Project(
+        "ua_explorer",
+        "ua_explorer.webp",
+        [
+            "A web application built to allow users to explore and compare statistics about different cities and urban areas from around the world.",
+            'Data about cities is pulled from the <a target="_blank" rel="noreferrer" href="https://developers.teleport.org/api/">Teleport public API</a>, and further links to that api and wikepedia articles about each location is provided for further reading.',
+        ],
+        "https://github.com/Rolv-Apneseth/ua-explorer",
+        "https://ua-explorer.netlify.app/",
+        "",
+        [tags.gatsby, tags.react, tags.ts, tags.scss],
+    ),
     new Project(
         "PS-Typer",
         "PS-Typer.png",
@@ -48,7 +63,7 @@ export const projects = [
         "https://github.com/Rolv-Apneseth/ps-typer",
         "",
         "https://pypi.org/project/ps-typer/",
-        [tags.python, tags.pyqt, tags.pyqtgraph, tags.sqlite, tags.nltk]
+        [tags.python, tags.pyqt, tags.pyqtgraph, tags.sqlite, tags.nltk],
     ),
     new Project(
         "daily_hn",
@@ -60,7 +75,7 @@ export const projects = [
         "https://github.com/Rolv-Apneseth/daily_hn",
         "",
         "https://pypi.org/project/daily-hn/",
-        [tags.python, tags.webscraping, tags.curses, tags.pytest]
+        [tags.python, tags.webscraping, tags.curses, tags.pytest],
     ),
     new Project(
         "Just-A-Tracker",
@@ -80,7 +95,7 @@ export const projects = [
             tags.bootstrap,
             tags.flask,
             tags.sqlalchemy,
-        ]
+        ],
     ),
     new Project(
         "Pathfind Visualiser",
@@ -92,18 +107,6 @@ export const projects = [
         "https://github.com/Rolv-Apneseth/pathfind-visualiser",
         "",
         "https://pypi.org/project/pathfind-visualiser/",
-        [tags.python, tags.algorithms, tags.pygame]
-    ),
-    new Project(
-        "Auto Folder Sorter",
-        "auto-folder-sort.webp",
-        [
-            "A Python script which can sort (and keep sorted) any given number of folders, either by file type or date of modification.",
-            "This script can be easily run in the background and keep, for example, your Downloads folder neatly sorted by file type so that whenever you download a new file, it is immediately sorted into the folder matching it's corresponding file type (same can be done with date).",
-        ],
-        "https://github.com/Rolv-Apneseth/auto-folder-sort",
-        "",
-        "",
-        [tags.python, tags.automation, tags.unittest]
+        [tags.python, tags.algorithms, tags.pygame],
     ),
 ]
