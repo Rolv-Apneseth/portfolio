@@ -10,7 +10,7 @@ type ProjectDataInput<'a> = (&'a str, &'a str, &'a [&'a str], &'a [&'a str], &'a
 const PROJECTS: &[ProjectDataInput] = &[ 
     (
                 "tfm.nvim · Terminal file manager integration for Neovim",
-                "tfm-nvim.png",
+                "tfm-nvim.webp",
                 &["https://github.com/Rolv-Apneseth/tfm.nvim"],
                 &[
                     "A plugin for Neovim which integrates several well-known terminal file managers directly into the editor. This provides the user with the ability to switch between these different file managers, and utilise them as alternatives to options such as file trees, or the builtin netrw, depending on their preferences.",
@@ -21,7 +21,7 @@ const PROJECTS: &[ProjectDataInput] = &[
     (
 
                 "rofi-games · Launch games from different sources all from one place",
-                "rofi-games.png",
+                "rofi-games.webp",
                 &[
                     "https://crates.io/crates/lib_game_detector",
                     "https://github.com/Rolv-Apneseth/rofi-games",
