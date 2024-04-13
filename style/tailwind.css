@@ -6,7 +6,3 @@
 .section-in-view:not(.section-in-view + .section-in-view) a {
     @apply text-slate-950 dark:text-slate-200 after:w-full !important;
 }
-
-html {
-    scroll-behavior: smooth;
-}

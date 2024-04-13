@@ -53,7 +53,10 @@ pub fn App() -> impl IntoView {
         .collect_view();
 
     view! {
-        <Html lang="en" class=move || if darkmode.is_dark() { "dark" } else { "" }/>
+        <Html
+            lang="en"
+            class=move || if darkmode.is_dark() { "scroll-smooth dark" } else { "scroll-smooth" }
+        />
 
         <Body class="relative py-12 px-6 mx-auto max-w-screen-xl min-h-screen font-sans antialiased leading-relaxed duration-300 md:py-20 md:px-12 lg:py-0 lg:px-24 bg-slate-200 transition-bg-color motion-reduce:transition-none dark:bg-primary dark:text-slate-400 dark:selection:bg-teal-300 dark:selection:text-teal-900"/>
 
