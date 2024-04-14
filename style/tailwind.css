@@ -6,3 +6,28 @@
 .section-in-view:not(.section-in-view + .section-in-view) a {
     @apply text-slate-950 dark:text-slate-200 after:w-full !important;
 }
+
+/* INTER FONT */
+@font-face {
+    font-family: "Inter";
+    font-display: swap;
+    src: url("../public/fonts/Inter-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-display: swap;
+    src: url("../public/fonts/Inter-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-display: swap;
+    src: url("../public/fonts/Inter-Italic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
