@@ -129,10 +129,10 @@ pub fn Contributions(#[prop()] data: ContributionsData) -> impl IntoView {
                 target="_blank"
                 rel="noreferrer noopener"
             >
-                <h5 class="flex gap-1 items-center mb-2 font-medium leading-snug">
+                <h4 class="flex gap-1 items-center mb-2 font-medium leading-snug">
                     <Icon icon=icondata::IoCaretForward/>
                     {&data.title}
-                </h5>
+                </h4>
             </a>
             <ul class="flex flex-col gap-2 ps-5">{pr_views}</ul>
         </li>
