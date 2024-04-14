@@ -224,7 +224,6 @@ pub fn ArchivedProjectsSection() -> impl IntoView {
             These are past projects that have been broken (e.g. by an API being retired, as
             is the case for ua-explorer), rendering the project useless without a major rework
         </aside>
-        {archived_project_views}
-        <ul class="group/list"></ul>
+        <ul class="group/list">{archived_project_views}</ul>
     }
 }
