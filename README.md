@@ -3,7 +3,7 @@
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 
-[![Site Preview](public/preview.png)](https://rolvapneseth.xyz)
+[![Site Preview](public/preview.webp)](https://rolvapneseth.xyz)
 
 ## Description
 
