@@ -10,7 +10,8 @@ use serde::{
 
 use crate::components::external_link::ExternalLink;
 
-const PRS_URL: &str = "https://api.github.com/search/issues?q=+author%3ARolv-Apneseth+type%3Apr+-user%3Arolv-apneseth";
+const PRS_URL: &str =
+"https://api.github.com/search/issues?q=+author%3ARolv-Apneseth+type%3Apr+-user%3Arolv-apneseth&sort=created&order=desc&per_page=100";
 
 const REPOS: [[&str; 2]; 7] = [
     ["sxyazi/yazi", "Yazi - A modern terminal file manager"],
