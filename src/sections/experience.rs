@@ -43,10 +43,7 @@ pub fn Experience(#[prop()] data: ExperienceData) -> impl IntoView {
                 href=data.workplace_href
                 target="_blank"
                 rel="noreferrer noopener"
-                class="grid sm:grid-cols-8 gap-1
-                lg:hover:!opacity-100 lg:group-hover/list:opacity-50 rounded-md
-                lg:hover:bg-slate-300/50 lg:dark:hover:bg-slate-800/50 lg:hover:shadow[inset_0_1px_0_0_rgba(148,163,184,0.1)]
-                lg:hover:drop-shadow-lg py-6 px-3 motion-reduce:transition-none duration-300"
+                class="grid gap-1 py-6 px-3 rounded-md duration-300 sm:grid-cols-8 motion-reduce:transition-none lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:hover:bg-slate-300/50 lg:dark:hover:bg-slate-800/50 lg:hover:shadow[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg"
             >
                 <header class="z-10 m-0 text-xs font-semibold tracking-wide uppercase sm:col-span-2 text-slate-500 dark:text-slate-500">
                     {format!("{} — {}", data.range[0], data.range[1])}
@@ -79,7 +76,7 @@ pub fn Experience(#[prop()] data: ExperienceData) -> impl IntoView {
 #[component]
 pub fn ExperienceSection() -> impl IntoView {
     view! {
-        <ol class="group/list flex flex-col gap-4 text-xs mt-3 mb-6">
+        <ol class="flex flex-col gap-4 mt-3 mb-6 text-xs group/list">
             <Experience data=ExperienceData::new(
                 "Kinesense Ltd.",
                 "https://www.kinesense-vca.com/",
@@ -107,10 +104,7 @@ pub fn ExperienceSection() -> impl IntoView {
         </ol>
 
         <a
-            class="inline-block overflow-hidden relative py-3 px-8 font-medium font-semibold
-            leading-tight rounded border border-violet-400  duration-300 dark:border-purple-500
-            hover:border-violet-400/20 focus:outline-none group before:w-0 before:absolute
-            before:left-0 before:inset-y-0 before:bg-violet-800 before:dark:bg-purple-600 before:motion-safe:transition-all after:duration-300 hover:dark:border-purple-600 hover:before:w-full"
+            class="inline-block overflow-hidden relative py-3 px-8 font-medium font-semibold leading-tight rounded border border-violet-400 duration-300 dark:border-purple-500 focus:outline-none group before:w-0 before:absolute before:left-0 before:inset-y-0 before:bg-violet-800 before:dark:bg-purple-600 before:motion-safe:transition-all after:duration-300 hover:border-violet-400/20 hover:dark:border-purple-600 hover:before:w-full"
             href="/public/rolvApnesethCV.pdf"
             target="_blank"
             rel="noreferrer noopener"

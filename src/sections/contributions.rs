@@ -121,9 +121,7 @@ pub fn Contributions(#[prop()] data: ContributionsData) -> impl IntoView {
         .collect_view();
 
     view! {
-        <li class="ps-2 py-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 rounded-md
-        lg:hover:bg-slate-300/50 lg:dark:hover:bg-slate-800/50 lg:hover:shadow[inset_0_1px_0_0_rgba(148,163,184,0.1)]
-        lg:hover:drop-shadow-lg transition-all motion-reduce:transition-none duration-300">
+        <li class="py-4 rounded-md transition-all duration-300 ps-2 motion-reduce:transition-none lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:hover:bg-slate-300/50 lg:dark:hover:bg-slate-800/50 lg:hover:shadow[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
             <a
                 class="text-slate-700 dark:text-slate-200"
                 href=&data.url
@@ -178,7 +176,7 @@ pub fn ContributionsSection() -> impl IntoView {
                         content="GitHub API".to_string()
                     />
                 </aside>
-                <ul class="group/list flex flex-col gap-1">{contribution_views}</ul>
+                <ul class="flex flex-col gap-1 group/list">{contribution_views}</ul>
             </ErrorBoundary>
         </Transition>
     }

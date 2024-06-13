@@ -64,7 +64,7 @@ pub fn App() -> impl IntoView {
 
         <div class="min-h-screen lg:flex lg:justify-between lg:gap-30">
 
-            <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+            <header class="lg:flex lg:sticky lg:top-0 lg:flex-col lg:justify-between lg:py-24 lg:w-1/2 lg:max-h-screen">
                 <section>
                     <h1 class="text-4xl font-bold tracking-tight sm:text-5xl dark:text-slate-200">
                         Rolv Apneseth
@@ -80,7 +80,7 @@ pub fn App() -> impl IntoView {
                 <Contact/>
             </header>
 
-            <main class="pt-24 lg:w-1/2 lg:py-24 flex flex-col gap-16">
+            <main class="flex flex-col gap-16 pt-24 lg:py-24 lg:w-1/2">
                 {sections_views} <Footer/>
             </main>
         </div>

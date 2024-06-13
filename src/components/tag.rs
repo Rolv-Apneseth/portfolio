@@ -77,8 +77,9 @@ impl fmt::Display for Tech {
 #[component]
 pub fn Tag(#[prop()] tech: Tech) -> impl IntoView {
     view! {
-        <li class="flex items-center rounded-full bg-violet-400/20 dark:bg-purple-200/10 px-3 py-1 text-xs font-medium
-        leading-5 text-violet-900 dark:text-purple-300 ">{tech.to_string()}</li>
+        <li class="flex items-center py-1 px-3 text-xs font-medium leading-5 text-violet-900 rounded-full dark:text-purple-300 bg-violet-400/20 dark:bg-purple-200/10">
+            {tech.to_string()}
+        </li>
     }
 }
 
