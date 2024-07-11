@@ -9,108 +9,113 @@ use crate::components::tag::{
 type ProjectDataInput<'a> = (&'a str, &'a str, &'a [&'a str], &'a [&'a str], &'a [Tech]);
 const PROJECTS: &[ProjectDataInput] = &[ 
     (
-                "tfm.nvim · Terminal file manager integration for Neovim",
-                "tfm-nvim.webp",
-                &["https://github.com/Rolv-Apneseth/tfm.nvim"],
-                &[
-                    "A plugin for Neovim which integrates several well-known terminal file managers directly into the editor. This provides the user with the ability to switch between these different file managers, and utilise them as alternatives to options such as file trees, or the builtin netrw, depending on their preferences.",
-                    "This has become an essential part of my Neovim configuration, and pairs well with the Yazi terminal file manager to substantially improve my workflow.",
-                ],
-                &[Tech::Lua, Tech::Neovim],
-),
+        "world-wonders-api · API providing information about World Wonders",
+        "world-wonders-api.webp",
+        &["https://github.com/Rolv-Apneseth/world-wonders-api", "https://world-wonders-api.org/v0/docs"],
+        &[
+            "An API written using axum, providing information about famous cultural wonders from around the world, such as the Colosseum, the Taj Mahal, Stonehenge, and many more.",
+            "This API can be accessed through a demo available for anyone to use, or it can be self-hosted via a Docker image available on Docker Hub. Comprehensive documentation is also provided in the form of a documentation web page which also includes an OpenAPI specification, for ease of use.",
+            "GitHub Actions automate CI/CD processes, including testing the code, rebuilding the Docker image, and deploying it to the server upon each push, ensuring a reliable and streamlined development and deployment process.",
+        ],
+        &[Tech::Rust, Tech::Docker, Tech::Axum, Tech::Serde, Tech::Tracing],
+    ),
     (
-
-                "rofi-games · Launch games from different sources all from one place",
-                "rofi-games.webp",
-                &[
-                    "https://crates.io/crates/lib_game_detector",
-                    "https://github.com/Rolv-Apneseth/rofi-games",
-                ],
-                &[
-                    "A plugin for the Rofi application launcher on Linux, which adds a mode for
-    launching games available on a user's system.",
-                    "Games are parsed at runtime from various common sources such as Steam, Heroic Games, Lutris and Bottles. This allows a user to efficiently access their entire gaming collection on Linux by integrating all games into a single, light-weight launcher",
-                    "The game parsing logic has also been extracted into a separate, standalone library, enabling other developers to leverage this functionality for their own purposes.",
-                ],
-                &[Tech::Rust, Tech::Criterion, Tech::Tracing, Tech::Nom],
-),
+        "tfm.nvim · Terminal file manager integration for Neovim",
+        "tfm-nvim.webp",
+        &["https://github.com/Rolv-Apneseth/tfm.nvim"],
+        &[
+            "A plugin for Neovim which integrates several well-known terminal file managers directly into the editor. This provides the user with the ability to switch between these different file managers, and utilise them as alternatives to options such as file trees, or the builtin netrw, depending on their preferences.",
+            "This has become an essential part of my Neovim configuration, and pairs well with the Yazi terminal file manager to substantially improve my workflow.",
+        ],
+        &[Tech::Lua, Tech::Neovim],
+    ),
     (
-
-                "PS-Typer · Desktop application for practising typing",
-                "PS-Typer.png",
-                &[
-                    "https://pypi.org/project/ps-typer/",
-                    "https://github.com/Rolv-Apneseth/ps-typer",
-                ],
-                &[
-                    "A GUI application made using the PyQt5 library for Python. With it, a user can practise getting their typing skills with almost endless sources of text to type out, and even keep track of their progress.",
-                    "User W.P.M. scores are stored locally using an SQLite database accessed via the sqlite3 Python module, and a user's progress is visualised using PyQtGraph.",
-                    "I personally use this program most days so that I can improve my typing speed
-    and accuracy. It has helped me progress comfortably, as I can keep typing as long as I want and still not repeat any text, which was the main goal of this application.",
-                ],
-                &[Tech::Py, Tech::Qt, Tech::PyQtGraph, Tech::Sqlite, Tech::Nltk],
-),
+        "rofi-games · Launch games from different sources all from one place",
+        "rofi-games.webp",
+        &[
+            "https://crates.io/crates/lib_game_detector",
+            "https://github.com/Rolv-Apneseth/rofi-games",
+        ],
+        &[
+            "A plugin for the Rofi application launcher on Linux, which adds a mode for launching games available on a user's system.",
+            "Games are parsed at runtime from various common sources such as Steam, Heroic Games, Lutris and Bottles. This allows a user to efficiently access their entire gaming collection on Linux by integrating all games into a single, light-weight launcher",
+            "The game parsing logic has also been extracted into a separate, standalone library, enabling other developers to leverage this functionality for their own purposes.",
+        ],
+        &[Tech::Rust, Tech::Criterion, Tech::Tracing, Tech::Nom],
+    ),
     (
-                "pathfind-visualiser · Pathfinding algorithm visualiser",
-                "pathfind-visualiser.webp",
-                &[
-                    "https://pypi.org/project/pathfind-visualiser/",
-                    "https://github.com/Rolv-Apneseth/pathfind-visualiser",
-                ],
-                &[
-                    "A pathfinding algorithm visualiser, written in Python and visualised with the help of the Pygame library.",
-                    "With this program a user can see different pathfinding algorithms in action. It also has algorithms for generating different kinds of mazes, so the behaviour of these algorithms can also be observed under different conditions.",
-                ],
-                &[Tech::Py, Tech::PyGame],
-)
+        "PS-Typer · Desktop application for practising typing",
+        "PS-Typer.png",
+        &[
+            "https://pypi.org/project/ps-typer/",
+            "https://github.com/Rolv-Apneseth/ps-typer",
+        ],
+        &[
+            "A GUI application made using the PyQt5 library for Python. With it, a user can practise getting their typing skills with almost endless sources of text to type out, and even keep track of their progress.",
+            "User W.P.M. scores are stored locally using an SQLite database accessed via the sqlite3 Python module, and a user's progress is visualised using PyQtGraph.",
+            "I personally use this program most days so that I can improve my typing speed
+and accuracy. It has helped me progress comfortably, as I can keep typing as long as I want and still not repeat any text, which was the main goal of this application.",
+        ],
+        &[Tech::Py, Tech::Qt, Tech::PyQtGraph, Tech::Sqlite, Tech::Nltk],
+    ),
+    (
+        "pathfind-visualiser · Pathfinding algorithm visualiser",
+        "pathfind-visualiser.webp",
+        &[
+            "https://pypi.org/project/pathfind-visualiser/",
+            "https://github.com/Rolv-Apneseth/pathfind-visualiser",
+        ],
+        &[
+            "A pathfinding algorithm visualiser, written in Python and visualised with the help of the Pygame library.",
+            "With this program a user can see different pathfinding algorithms in action. It also has algorithms for generating different kinds of mazes, so the behaviour of these algorithms can also be observed under different conditions.",
+        ],
+        &[Tech::Py, Tech::PyGame],
+    )
 ];
 
 
 const PROJECTS_ARCHIVED: &[ProjectDataInput] = &[
-(
-                "ua-explorer · Explore and compare cities based on their statistics",
-                "ua_explorer.webp",
-                &["https://github.com/Rolv-Apneseth/ua-explorer"],
-                &[
-                    "A website built to allow users to explore and compare statistics about different cities and urban areas from around the world.",
-                    "Data about cities is fetched from the Teleport public API, and further links to that API and Wikepedia articles about each location is provided for further reading.",
-                ],
-                &[Tech::Ts, Tech::React, Tech::Scss, Tech::Gatsby, Tech::Netlify],
-),
-
     (
-                "Just-A-Tracker · Web application for bug/issue tracking",
-                "just-a-tracker.webp",
-                &["https://github.com/Rolv-Apneseth/just-a-tracker"],
-                &[
-                    "A web application which allows users to track issues for different projects, as well as add other users to workspaces and comment on specific issues for better communication with a team.",
-                    "The backend is built using Python with Flask and SQLAlchemy, and the frontend uses Bootstrap as well as custom SCSS for styling.",
-                ],
-                &[
-                    Tech::Js,
-                    Tech::Jquery,
-                    Tech::Scss,
-                    Tech::Bs,
-                    Tech::Py,
-                    Tech::Flask,
-                    Tech::SqlAlchemy,
-                ],
-),
+        "ua-explorer · Explore and compare cities based on their statistics",
+        "ua_explorer.webp",
+        &["https://github.com/Rolv-Apneseth/ua-explorer"],
+        &[
+            "A website built to allow users to explore and compare statistics about different cities and urban areas from around the world.",
+            "Data about cities is fetched from the Teleport public API, and further links to that API and Wikepedia articles about each location is provided for further reading.",
+        ],
+        &[Tech::Ts, Tech::React, Tech::Scss, Tech::Gatsby, Tech::Netlify],
+    ),
     (
-
-                "daily_hn · CLI for browsing the top stories on HN",
-                "daily_hn.webp",
-                &[
-                    "https://pypi.org/project/daily-hn/",
-                    "https://github.com/Rolv-Apneseth/daily_hn",
-                ],
-                &[
-                    "A command line tool for displaying and opening links to the current best stories from news.ycombinator.com (Hacker News). It works by scraping the best stories page and displaying it for the user using a curses library UI.",
-                    "Automatically tested and published to PyPI using Pytest and GitHub Actions",
-                ],
-                &[Tech::Py, Tech::Curses, Tech::PyTest],
-)
-
+        "Just-A-Tracker · Web application for bug/issue tracking",
+        "just-a-tracker.webp",
+        &["https://github.com/Rolv-Apneseth/just-a-tracker"],
+        &[
+            "A web application which allows users to track issues for different projects, as well as add other users to workspaces and comment on specific issues for better communication with a team.",
+            "The backend is built using Python with Flask and SQLAlchemy, and the frontend uses Bootstrap as well as custom SCSS for styling.",
+        ],
+        &[
+            Tech::Js,
+            Tech::Jquery,
+            Tech::Scss,
+            Tech::Bs,
+            Tech::Py,
+            Tech::Flask,
+            Tech::SqlAlchemy,
+        ],
+    ),
+    (
+        "daily_hn · CLI for browsing the top stories on HN",
+        "daily_hn.webp",
+        &[
+            "https://pypi.org/project/daily-hn/",
+            "https://github.com/Rolv-Apneseth/daily_hn",
+        ],
+        &[
+            "A command line tool for displaying and opening links to the current best stories from news.ycombinator.com (Hacker News). It works by scraping the best stories page and displaying it for the user using a curses library UI.",
+            "Automatically tested and published to PyPI using Pytest and GitHub Actions",
+        ],
+        &[Tech::Py, Tech::Curses, Tech::PyTest],
+    )
 ];
 
 pub struct ProjectData {

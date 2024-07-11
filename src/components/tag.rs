@@ -27,11 +27,14 @@ pub enum Tech {
     Flask,
     SqlAlchemy,
     Rust,
+    Axum,
+    Serde,
     Tracing,
     Nom,
     Criterion,
     Lua,
     Neovim,
+    Docker,
 }
 
 impl fmt::Display for Tech {
@@ -41,6 +44,8 @@ impl fmt::Display for Tech {
             "{}",
             match *self {
                 Tech::Rust => "Rust",
+                Tech::Axum => "Axum",
+                Tech::Serde => "Serde",
                 Tech::Criterion => "Criterion",
                 Tech::Tracing => "Tracing",
                 Tech::Nom => "Nom",
@@ -69,6 +74,7 @@ impl fmt::Display for Tech {
                 Tech::Jquery => "JQuery",
                 Tech::Flask => "Flask",
                 Tech::SqlAlchemy => "SQLAlchemy",
+                Tech::Docker => "Docker",
             }
         )
     }
