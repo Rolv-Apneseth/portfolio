@@ -185,7 +185,7 @@ pub fn Project(#[prop()] data: ProjectData) -> impl IntoView {
                 target="_blank"
                 rel="noreferrer noopener"
             >
-                <img class="rounded-md shadow-lg" alt="Demo image" src=data.path_image/>
+                <img class="rounded-md shadow-lg" alt="Demo image" src=data.path_image />
             </a>
 
             <div class="flex flex-col gap-3 sm:col-span-5">
@@ -199,7 +199,7 @@ pub fn Project(#[prop()] data: ProjectData) -> impl IntoView {
                         .collect::<Vec<_>>()}
                 </ul>
 
-                <Tags techs=data.techs/>
+                <Tags techs=data.techs />
             </div>
         </li>
     }
@@ -209,7 +209,7 @@ pub fn Project(#[prop()] data: ProjectData) -> impl IntoView {
 pub fn ProjectsSection() -> impl IntoView {
     let project_views = PROJECTS.iter().map(|input| {
         let data = ProjectData::new(*input);
-        view! { <Project data=data/> }
+        view! { <Project data=data /> }
     }).collect_view();
 
     view! { <ul class="group/list">{project_views}</ul> }
@@ -219,7 +219,7 @@ pub fn ProjectsSection() -> impl IntoView {
 pub fn ArchivedProjectsSection() -> impl IntoView {
     let archived_project_views = PROJECTS_ARCHIVED.iter().map(|input| {
         let data = ProjectData::new(*input);
-        view! { <Project data=data/> }
+        view! { <Project data=data /> }
     }).collect_view();
     view! {
         <aside class="mb-3 text-sm italic">

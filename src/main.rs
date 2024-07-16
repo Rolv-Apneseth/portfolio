@@ -9,6 +9,6 @@ use crate::app::App;
 
 fn main() {
     mount_to_body(move || {
-        view! { <App/> }
+        view! { <App /> }
     })
 }

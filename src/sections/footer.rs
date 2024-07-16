@@ -8,7 +8,7 @@ pub fn Footer() -> impl IntoView {
         <footer class="flex flex-col gap-3 mt-10 text-sm italic leading-tight">
             <p>
                 This site is built from scratch using
-                <ExternalLink href="https://leptos.dev/".to_string() content="Leptos".to_string()/>
+                <ExternalLink href="https://leptos.dev/".to_string() content="Leptos".to_string() />
                 (Rust + WASM) and
                 <ExternalLink
                     href="https://tailwindcss.com/".to_string()

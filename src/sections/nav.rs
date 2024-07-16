@@ -21,7 +21,7 @@ pub fn Nav(
     let links_views = sections
         .into_iter()
         .map(|(label, is_visible)| {
-            view! { <NavLink title=label is_visible=is_visible.0/> }
+            view! { <NavLink title=label is_visible=is_visible.0 /> }
         })
         .collect_view();
 

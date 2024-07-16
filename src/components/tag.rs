@@ -93,7 +93,7 @@ pub fn Tag(#[prop()] tech: Tech) -> impl IntoView {
 pub fn Tags(#[prop()] techs: Vec<Tech>) -> impl IntoView {
     view! {
         <ul class="flex flex-wrap gap-1 w-100">
-            {techs.into_iter().map(|t| view! { <Tag tech=t/> }).collect_view()}
+            {techs.into_iter().map(|t| view! { <Tag tech=t /> }).collect_view()}
         </ul>
     }
 }

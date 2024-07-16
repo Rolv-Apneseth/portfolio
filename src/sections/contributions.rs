@@ -111,7 +111,7 @@ pub fn Contributions(#[prop()] data: ContributionsData) -> impl IntoView {
                         href=&pr.html_url
                     >
                         <span>
-                            <Icon class=format!("h-6 w-6 {fill}") icon=icondata::IoGitPullRequest/>
+                            <Icon class=format!("h-6 w-6 {fill}") icon=icondata::IoGitPullRequest />
                         </span>
                         <span class="flex-grow-0 flex-shrink-1">{&pr.title}</span>
                     </a>
@@ -129,7 +129,7 @@ pub fn Contributions(#[prop()] data: ContributionsData) -> impl IntoView {
                 rel="noreferrer noopener"
             >
                 <h4 class="flex gap-1 items-center mb-2 font-medium leading-snug">
-                    <Icon icon=icondata::IoCaretForward/>
+                    <Icon icon=icondata::IoCaretForward />
                     {&data.title}
                 </h4>
             </a>
@@ -161,7 +161,7 @@ pub fn ContributionsSection() -> impl IntoView {
             REPOS
                 .iter()
                 .map(|[repo, title]| ContributionsData::new(prs, repo, title))
-                .map(|d| view! { <Contributions data=d/> })
+                .map(|d| view! { <Contributions data=d /> })
                 .collect_view()
         })
     };

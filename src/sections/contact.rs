@@ -46,22 +46,22 @@ pub fn Contact() -> impl IntoView {
                     "LinkedIn",
                     "https://www.linkedin.com/in/rolv-apneseth-6b47401b5",
                     icondata::BiLinkedin,
-                )/>
+                ) />
                 <ContactLink data=ContactLinkData::new(
                     "Email",
                     "mailto:rolv.apneseth@gmail.com",
                     icondata::IoMail,
-                )/>
+                ) />
                 <ContactLink data=ContactLinkData::new(
                     "GitHub",
                     "https://github.com/Rolv-Apneseth",
                     icondata::BiGithub,
-                )/>
+                ) />
                 <ContactLink data=ContactLinkData::new(
                     "StackOverflow",
                     "https://stackoverflow.com/users/14316282/rolv-apneseth",
                     icondata::BiStackOverflow,
-                )/>
+                ) />
             </ul>
         </nav>
     }

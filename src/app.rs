@@ -37,10 +37,10 @@ pub fn App() -> impl IntoView {
         .iter()
         .map(|(label, is_visible)| {
             let child = match label.as_str() {
-                "experience" => view! { <ExperienceSection/> },
-                "contributions" => view! { <ContributionsSection/> },
-                "projects" => view! { <ProjectsSection/> },
-                "archive" => view! { <ArchivedProjectsSection/> },
+                "experience" => view! { <ExperienceSection /> },
+                "contributions" => view! { <ContributionsSection /> },
+                "projects" => view! { <ProjectsSection /> },
+                "archive" => view! { <ArchivedProjectsSection /> },
                 _ => unreachable!(),
             };
 
@@ -58,9 +58,9 @@ pub fn App() -> impl IntoView {
             class=move || if darkmode.is_dark() { "scroll-smooth dark" } else { "scroll-smooth" }
         />
 
-        <Body class="relative py-12 px-6 mx-auto max-w-screen-xl min-h-screen antialiased leading-relaxed duration-300 md:py-20 md:px-12 lg:py-0 lg:px-24 bg-slate-200 transition-bg-color motion-reduce:transition-none dark:bg-primary dark:text-slate-400 dark:selection:bg-teal-300 dark:selection:text-teal-900"/>
+        <Body class="relative py-12 px-6 mx-auto max-w-screen-xl min-h-screen antialiased leading-relaxed duration-300 md:py-20 md:px-12 lg:py-0 lg:px-24 bg-slate-200 transition-bg-color motion-reduce:transition-none dark:bg-primary dark:text-slate-400 dark:selection:bg-teal-300 dark:selection:text-teal-900" />
 
-        <ThemeToggle/>
+        <ThemeToggle />
 
         <div class="min-h-screen lg:flex lg:justify-between lg:gap-30">
 
@@ -75,13 +75,13 @@ pub fn App() -> impl IntoView {
                     <p class="mt-4 max-w-xs leading-normal">
                         A proactive learner with a strong work ethic, seeking to apply my knowledge and skills
                     </p>
-                    <Nav sections=sections/>
+                    <Nav sections=sections />
                 </section>
-                <Contact/>
+                <Contact />
             </header>
 
             <main class="flex flex-col gap-16 pt-24 lg:py-24 lg:w-1/2">
-                {sections_views} <Footer/>
+                {sections_views} <Footer />
             </main>
         </div>
     }

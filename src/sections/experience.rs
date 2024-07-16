@@ -66,7 +66,7 @@ pub fn Experience(#[prop()] data: ExperienceData) -> impl IntoView {
                             .collect::<Vec<_>>()}
                     </ul>
 
-                    <Tags techs=data.techs/>
+                    <Tags techs=data.techs />
                 </div>
             </a>
         </li>
@@ -88,7 +88,7 @@ pub fn ExperienceSection() -> impl IntoView {
                 ],
                 ["2022", "Present"],
                 [Tech::Ts, Tech::React, Tech::Redux, Tech::Az, Tech::Jest, Tech::Bs, Tech::Scss],
-            )/>
+            ) />
             <Experience data=ExperienceData::new(
                 "Bottletop Media",
                 "https://iclass-cms.com/",
@@ -100,7 +100,7 @@ pub fn ExperienceSection() -> impl IntoView {
                 ],
                 ["2021", "2022"],
                 [Tech::Js, Tech::Html, Tech::Css, Tech::Py],
-            )/>
+            ) />
         </ol>
 
         <a
@@ -110,7 +110,7 @@ pub fn ExperienceSection() -> impl IntoView {
             rel="noreferrer noopener"
         >
             <span class="flex relative gap-3 items-center text-sm text-violet-800 transition-colors duration-300 dark:text-purple-500 group-hover:text-slate-100">
-                <Icon icon=icondata::ImProfile/>
+                <Icon icon=icondata::ImProfile />
                 View CV / Résumé
             </span>
         </a>
