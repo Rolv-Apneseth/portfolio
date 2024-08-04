@@ -28,9 +28,9 @@ pub fn App() -> impl IntoView {
 
     let sections = vec![
         ("experience".to_string(), create_signal(false)),
-        ("contributions".to_string(), create_signal(false)),
         ("projects".to_string(), create_signal(false)),
         ("archive".to_string(), create_signal(false)),
+        ("contributions".to_string(), create_signal(false)),
     ];
 
     let sections_views = sections
