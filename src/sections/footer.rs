@@ -17,9 +17,8 @@ pub fn Footer() -> impl IntoView {
                 />and hosted using
                 <ExternalLink
                     href="https://pages.cloudflare.com/".to_string()
-                    content="Cloudflare
-       Pages.".to_string()
-                />Check out the code by
+                    content="Cloudflare Pages.".to_string()
+                />{" "}Check out the code by
                 <ExternalLink
                     href="https://github.com/Rolv-Apneseth/portfolio".to_string()
                     content="clicking here!".to_string()
