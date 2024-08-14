@@ -1,13 +1,12 @@
 # Developer Portfolio
 
-[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](./LICENSE)
 
-[![Site Preview](public/preview.webp)](https://rolvapneseth.xyz)
+[![Site Preview](public/preview.webp)](https://rolvapneseth.com )
 
 ## Description
 
-My personal developer portfolio, built from scratch using [Leptos](https://leptos.dev/), which can be found at [rolvapneseth.xyz](https://rolvapneseth.xyz)
+My personal developer portfolio, built from scratch using [Leptos](https://leptos.dev/), which can be found at [rolvapneseth.com](https://rolvapneseth.com )
 
 ## Tools/Technologies
 
