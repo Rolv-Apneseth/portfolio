@@ -6,7 +6,7 @@
 
 ## Description
 
-My personal developer portfolio, built from scratch using [Leptos](https://leptos.dev/), which can be found at [rolvapneseth.com](https://rolvapneseth.com )
+My personal developer portfolio, built from scratch using [Leptos](https://leptos.dev/), which can be found at [rolvapneseth.com](https://rolvapneseth.com)
 
 ## Tools/Technologies
 
