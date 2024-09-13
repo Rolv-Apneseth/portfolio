@@ -20,6 +20,16 @@ const PROJECTS: &[ProjectDataInput] = &[
         &[Tech::Rust, Tech::Docker, Tech::Axum, Tech::Serde, Tech::Tracing],
     ),
     (
+        "world-wonders-explorer · Website to demo world-wonders-api",
+        "world-wonders-explorer.webp",
+        &["https://github.com/Rolv-Apneseth/world-wonders-explorer", "https://explorer.world-wonders-api.org"],
+        &[
+            "A single page website where users can explore and learn more about famous cultural wonders from around the world.This website is intended as a demo of world-wonders-api.",
+            "Wonders are displayed as cards with a carousel of images, some information about the wonder and links for further reading. Users can also search by name or location and filter by build year or category.",
+        ],
+        &[Tech::Rust, Tech::Leptos, Tech::Strum, Tech::Tracing],
+    ),
+    (
         "tfm.nvim · Terminal file manager integration for Neovim",
         "tfm-nvim.webp",
         &["https://github.com/Rolv-Apneseth/tfm.nvim"],
