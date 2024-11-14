@@ -28,6 +28,7 @@ pub enum Tech {
     Flask,
     SqlAlchemy,
     Rust,
+    Reqwest,
     Axum,
     Serde,
     Tracing,
@@ -47,6 +48,7 @@ impl fmt::Display for Tech {
             "{}",
             match *self {
                 Tech::Rust => "Rust",
+                Tech::Reqwest => "Reqwest",
                 Tech::Axum => "Axum",
                 Tech::Serde => "Serde",
                 Tech::Criterion => "Criterion",
