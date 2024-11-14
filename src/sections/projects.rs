@@ -9,6 +9,18 @@ use crate::components::tag::{
 type ProjectDataInput<'a> = (&'a str, &'a str, &'a [&'a str], &'a [&'a str], &'a [Tech]);
 const PROJECTS: &[ProjectDataInput] = &[
     (
+        "frankfurter-rs · Rust bindings to the Frankfurter API",
+        "frs.webp",
+        &["https://github.com/Rolv-Apneseth/https://github.com/Rolv-Apneseth/frankfurte-rs",
+            "https://crates.io/crates/lib_frankfurter", "https://crates.io/crates/frankfurter_cli"],
+        &[
+            "Rust bindings to Frankfurter, a free, open-source and self-hostable currency exchange rate API. This project includes a library, to provide all the core functionality surrounding the API, and also a cross-platform CLI for directly utilising any instance of the API.",
+            "By default, results are displayed in the form of formatted and (optionally) colour coded tables, allowing users to easily read the presented data. Options are also available for returning the unformatted data or JSON to allow users to pipe the output onwards for further processing.",
+            "The project features unit tests for both the library and CLI, but also integration tests, made possible by automating the deployment of a local Frankfurter API and database using a custom `docker-compose.yml`, which also runs in CI to ensure reliability.",
+        ],
+        &[Tech::Rust, Tech::Docker, Tech::Reqwest, Tech::Serde],
+    ),
+    (
         "world-wonders-api · API providing information about World Wonders",
         "world-wonders-api.webp",
         &["https://github.com/Rolv-Apneseth/world-wonders-api", "https://world-wonders-api.org/v0/docs"],
