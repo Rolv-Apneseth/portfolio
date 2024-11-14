@@ -17,7 +17,8 @@ develop:
 
 # Format
 format:
-    leptosfmt
+    cargo fmt
+    leptosfmt **/*.rs
 
 # Clean
 clean:

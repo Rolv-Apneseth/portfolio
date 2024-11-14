@@ -7,7 +7,7 @@ use crate::components::tag::{
 };
 
 type ProjectDataInput<'a> = (&'a str, &'a str, &'a [&'a str], &'a [&'a str], &'a [Tech]);
-const PROJECTS: &[ProjectDataInput] = &[ 
+const PROJECTS: &[ProjectDataInput] = &[
     (
         "world-wonders-api · API providing information about World Wonders",
         "world-wonders-api.webp",
@@ -82,7 +82,6 @@ and accuracy. It has helped me progress comfortably, as I can keep typing as lon
         &[Tech::Py, Tech::PyGame],
     )
 ];
-
 
 const PROJECTS_ARCHIVED: &[ProjectDataInput] = &[
     (
@@ -217,20 +216,26 @@ pub fn Project(#[prop()] data: ProjectData) -> impl IntoView {
 
 #[component]
 pub fn ProjectsSection() -> impl IntoView {
-    let project_views = PROJECTS.iter().map(|input| {
-        let data = ProjectData::new(*input);
-        view! { <Project data=data /> }
-    }).collect_view();
+    let project_views = PROJECTS
+        .iter()
+        .map(|input| {
+            let data = ProjectData::new(*input);
+            view! { <Project data=data /> }
+        })
+        .collect_view();
 
     view! { <ul class="group/list">{project_views}</ul> }
 }
 
 #[component]
 pub fn ArchivedProjectsSection() -> impl IntoView {
-    let archived_project_views = PROJECTS_ARCHIVED.iter().map(|input| {
-        let data = ProjectData::new(*input);
-        view! { <Project data=data /> }
-    }).collect_view();
+    let archived_project_views = PROJECTS_ARCHIVED
+        .iter()
+        .map(|input| {
+            let data = ProjectData::new(*input);
+            view! { <Project data=data /> }
+        })
+        .collect_view();
     view! {
         <aside class="mb-3 text-sm italic">
             These are past projects that have been broken (e.g. by an API being retired, as
