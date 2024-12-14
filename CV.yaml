@@ -1,0 +1,129 @@
+cv:
+  name: Rolv Apneseth
+  email: rolv.apneseth@gmail.com
+  website: https://rolvapneseth.com
+
+  social_networks:
+    - network: GitHub
+      username: Rolv-Apneseth
+
+  sections:
+    experience:
+      - company: Kinesense Ltd.
+        position: Front-End Developer
+        location: Remote, Ireland
+        start_date: 2022-11
+        highlights:
+          - Develop the front end of a web-based application, using React, which is re-creating the company's flagship desktop application (a complex video analysis tool), and will be used by law enforcement and security clients all over the world.
+          - Leverage Redux to manage intricate client-side state and RTKQuery for querying and caching API responses from the backend, allowing for reliable scaling and easy debugging of state-related errors.
+          - Write and maintain comprehensive unit tests using Jest, and maintain Azure DevOps CI/CD workflows, ensuring the reliability of the web application.
+          - Created custom components using React and SCSS, such as a dashboards with draggable components, a video overlay for displaying motion and selecting sections of a frame, progress bars, job queues and many more.
+          - Migrated all old class-based React components to functional components, also fixing critical bugs along the way. This greatly reduced the complexity of the large component update hooks, improving the maintainability and extensibility of the code.
+
+      - company: Bottletop Media
+        position: Junior Front-End Developer
+        location: Remote, Ireland
+        start_date: 2021-09
+        end_date: 2022-11
+        highlights:
+          - Updated and maintained websites for over 1000 existing clients using modern HTML, CSS, and JavaScript.
+          - Implemented custom styling and interactive features for clients, leading to increased customer satisfaction.
+          - Using modern CSS and a touch of VB.NET, created demo websites with unique, custom layouts for big potential clients, increasing their interest in the company's product.
+          - Developed a custom Selenium (browser automation) script in Python to automate the creation of page structures on the company's proprietary CMS software for new clients' websites, significantly speeding up the initial development stage.
+          - Occasionally adjusted or edited videos and images for clients using ffmpeg and imagemagick respectively.
+          # - Built an app to compute the similarity of all methods
+          #   in a codebase, reducing the time from $\mathcal{O}(n^2)$
+          #   to $\mathcal{O}(n \log n)$
+
+    Skills:
+      - label: Languages
+        details: Rust | Python | JavaScript | TypeScript | Bash | Lua
+
+      - label: Technologies
+        details: React | Redux | HTML | CSS | SCSS | Tailwind CSS | Docker | GitHub Actions | OpenAPI
+
+      - label: Soft skills
+        details: Focused | Self-driven | Fast learner | Pragmatic | Adaptable
+
+      - label: Interests
+        details: Linux | Self-hosting | Computer building | Open source
+
+    Personal Projects:
+      - name: World Wonders API
+        date: '[Docs](https://world-wonders-api.org/v0/docs) | [Code](https://github.com/Rolv-Apneseth/world-wonders-api)'
+        highlights:
+          - An API written in Rust using Axum, which provides information about famous architectural wonders from around the world, created to explore back-end technologies as well as my interest in history.
+          - Made self-hosting very accessible by creating a Docker image, available on Docker Hub. A web page is provided for documentation, as well as an OpenAPI specification.
+          - Automated CI/CD processes using GitHub Actions, including running unit and integration test, rebuilding the Docker image, and deploying it to the VPS, leading to an improved developer experience with a one-step deployment process.
+
+      - name: ps-typer
+        date: '[PyPi](https://pypi.org/project/ps-typer/) | [Code](https://github.com/Rolv-Apneseth/ps-typer)'
+        highlights:
+          - A GUI application written in Python using PyQt5, made for practising typing with a modern, minimalistic UI, made using the PyQt5 library for Python. I used this application to go from 40 WPM to 85 WPM and continue to use it to this day.
+          - Leveraged various corpora of text from the NLTK library to generate near endless content of full, proper sentences for a user to practice typing with. This was one of my main goals in creating this project.
+          - Implemented a user statistics system with the use of a local SQLite3 database, so that users can track the progression of their typing speeds. The results are visualised using PyQtGraph for easy consumption.
+
+      # - name: rofi-games
+      #   date: '[Crate](https://crates.io/crates/lib_game_detector) | [Code](https://github.com/Rolv-Apneseth/rofi-games)'
+      #   highlights:
+      #     - A plugin for the Rofi application launcher on Linux, written in Rust, which adds a mode for neatly displaying and launching games available from multiple sources on a user's system. This is one of my favourite projects, created because I wanted to save time in selecting and launching games on my system.
+      #     - Games are efficiently parsed at runtime from various configuration files for common game sources, such as Steam or Lutris, using the nom library. This allows a user to access their entire gaming collection in a single, light-weight launcher which takes milliseconds to detect all their games.
+      #     - A configuration file can optionally be created to modify parsed entries or define custom ones, allowing the user to customise and extend the available options for the launcher to their liking.
+      #
+    Open Source Contributions:
+      - label: '[Yazi](https://github.com/sxyazi/yazi/pulls?q=is:pr+author:Rolv-Apneseth+is:merged)'
+        details: A modern terminal file manager
+
+      - label: '[languagetool-rust](https://github.com/jeertmans/languagetool-rust/pulls?q=is:pr+author:Rolv-Apneseth+is:merged)'
+        details: Rust bindings to connect with a LanguageTool server API
+
+      - label: '[rustywind](https://github.com/avencera/rustywind/pulls?q=is:pr+author:Rolv-Apneseth)'
+        details: Formatting tool for sorting Tailwind CSS classes
+
+      - label: '[wpaperd](https://github.com/danyspin97/wpaperd/pulls?q=is:pr+author:Rolv-Apneseth)'
+        details: Minimal wallpaper daemon for Wayland on Linux
+
+      - label: '[libmacchina](https://github.com/Macchina-CLI/libmacchina/pulls?q=is:pr+author:Rolv-Apneseth)'
+        details: A Rust library providing access to all sorts of system information
+
+      - label: '[macchina](https://github.com/Macchina-CLI/macchina/pulls?q=is:pr+author:Rolv-Apneseth)'
+        details: CLI tool for displaying system information
+
+      - label: '[tldr](https://github.com/tldr-pages/tldr/pulls?q=is:pr+author:Rolv-Apneseth)'
+        details: A collection of help pages for command-line tools
+
+design:
+  theme: engineeringresumes
+  # font: Source Sans 3
+  font: Charter
+  font_size: 10pt
+  page_size: a4paper
+  color: '#222222'
+  disable_external_link_icons: false
+  disable_page_numbering: true
+  disable_last_updated_date: true
+  header_font_size: 25 pt
+  text_alignment: justified
+  seperator_between_connections: ''
+  use_icons_for_connections: true
+  margins:
+    page:
+      top: 1 cm
+      bottom: 1 cm
+      left: 1 cm
+      right: 1 cm
+    section_title:
+      top: 0.3 cm
+      bottom: 0.2 cm
+    entry_area:
+      left_and_right: 0.2 cm
+      vertical_between: 0.1 cm
+      date_and_location_width: 4.5 cm
+    highlights_area:
+      top: 0.05 cm
+      left: 0.4 cm
+      vertical_between_bullet_points: 0.05 cm
+    header:
+      vertical_between_name_and_connections: 0.1 cm
+      bottom: 0.2 cm
+      horizontal_between_connections: 0.5 cm
