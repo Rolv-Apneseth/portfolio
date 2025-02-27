@@ -13,8 +13,12 @@ use crate::components::external_link::ExternalLink;
 const PRS_URL: &str =
 "https://api.github.com/search/issues?q=+author%3ARolv-Apneseth+type%3Apr+-user%3Arolv-apneseth&sort=created&order=desc&per_page=100";
 
-const REPOS: [[&str; 2]; 7] = [
+const REPOS: [[&str; 2]; 8] = [
     ["sxyazi/yazi", "Yazi - A modern terminal file manager"],
+    [
+        "jeertmans/languagetool-rust",
+        "LanguageTool-Rust - Rust bindings to connect with LanguageTool server API",
+    ],
     [
         "avencera/rustywind",
         "rustywind - Formatting tool for sorting Tailwind classes",
