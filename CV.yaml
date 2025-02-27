@@ -10,15 +10,24 @@ cv:
   sections:
     experience:
       - company: Kinesense Ltd.
-        position: Front-End Developer
+        position: Junior Front-End Developer
         location: Remote, Ireland
         start_date: 2022-11
         highlights:
-          - Develop the front end of a web-based application, using React, which is re-creating the company's flagship desktop application (a complex video analysis tool), and will be used by law enforcement and security clients all over the world.
-          - Leverage Redux to manage intricate client-side state and RTKQuery for querying and caching API responses from the backend, allowing for reliable scaling and easy debugging of state-related errors.
-          - Write and maintain comprehensive unit tests using Jest, and maintain Azure DevOps CI/CD workflows, ensuring the reliability of the web application.
-          - Created custom components using React and SCSS, such as a dashboards with draggable components, a video overlay for displaying motion and selecting sections of a frame, progress bars, job queues and many more.
-          - Migrated all old class-based React components to functional components, also fixing critical bugs along the way. This greatly reduced the complexity of the large component update hooks, improving the maintainability and extensibility of the code.
+          - Primary front-end developer of a web-based video investigation tool built using React,
+            adapting the company's flagship desktop application to serve law enforcement and
+            security clients globally in a more accessible format.
+          - Collaborate closely with the senior developer in charge of the project on architectural
+            decisions, ensuring seamless integration between front-end and back-end systems. In
+            addition, conduct thorough code reviews for back-end changes, both to identify potential
+            bugs and remain updated on relevant functionality.
+          - Build maintainable custom components (e.g. interactive video timeline with events, video overlays
+            for motion detection, progress indicators for video import and analysis) using modern
+            features like hooks to minimise complexity while still enhancing user experience.
+          - Leverage Redux for state management and RTKQuery for efficient API handling,
+            ensuring scalability and robust debugging capabilities.
+          - Develop comprehensive unit tests with Jest and maintain Azure DevOps CI/CD pipelines,
+            ensuring high code quality and reliability.
 
       - company: Bottletop Media
         position: Junior Front-End Developer
@@ -26,73 +35,85 @@ cv:
         start_date: 2021-09
         end_date: 2022-11
         highlights:
-          - Updated and maintained websites for over 1000 existing clients using modern HTML, CSS, and JavaScript.
+          - Optimised and maintained websites for over 1000 existing clients using modern HTML, CSS, and JavaScript.
           - Implemented custom styling and interactive features for clients, leading to increased customer satisfaction.
-          - Using modern CSS and a touch of VB.NET, created demo websites with unique, custom layouts for big potential clients, increasing their interest in the company's product.
-          - Developed a custom Selenium (browser automation) script in Python to automate the creation of page structures on the company's proprietary CMS software for new clients' websites, significantly speeding up the initial development stage.
-          - Occasionally adjusted or edited videos and images for clients using ffmpeg and imagemagick respectively.
-          # - Built an app to compute the similarity of all methods
-          #   in a codebase, reducing the time from $\mathcal{O}(n^2)$
-          #   to $\mathcal{O}(n \log n)$
+          - Using modern CSS and a touch of VB.NET, created demo websites with unique, custom layouts for big potential clients, greatly increasing their interest in the company's product.
+          - Developed a custom Selenium (browser automation) script in Python to automate the creation of page structures on the company's proprietary CMS software for new clients' websites, speeding up the initial setup stage by over 200%.
 
     Skills:
-      - label: Programming Languages
-        details: Rust | Python | JavaScript | TypeScript | Bash | Lua
+      - label: Languages
+        details: Rust | TypeScript | JavaScript | Lua | Python | Bash | Go
 
       - label: Technologies
         details: React | Redux | HTML | CSS | SCSS | Tailwind CSS | Docker | GitHub Actions | OpenAPI
 
-      - label: Soft skills
-        details: Focused | Self-driven | Fast learner | Pragmatic | Adaptable
-
       - label: Interests
-        details: Linux | Self-hosting | Computer building | Open source
+        details: Open-Source Software | Linux | Self-Hosting | Computer Building
 
-      - label: Languages
+      - label: Soft Skills
+        details: Focused | Self-Driven | Fast Learner | Pragmatic | Adaptable
+
+      - label: Natural Languages
         details: English | Portuguese | Norwegian
 
     Personal Projects:
       - name: World Wonders API
         date: '[Docs](https://world-wonders-api.org/v0/docs) | [Code](https://github.com/Rolv-Apneseth/world-wonders-api)'
         highlights:
-          - An API written in Rust using Axum, which provides information about famous architectural wonders from around the world, created to explore back-end technologies as well as my interest in history.
-          - Made self-hosting very accessible by creating a Docker image, available on Docker Hub. A web page is provided for documentation, as well as an OpenAPI specification.
+          - An API written in Rust using Axum, which provides information about famous architectural
+            wonders from around the world, created to explore back-end technologies as well as my
+            interest in history.
+          - Developed a Docker image for seamless self-hosting, accessible via Docker Hub, and
+            provided detailed documentation through a web page along with an OpenAPI specification.
           - Automated CI/CD processes using GitHub Actions, including running unit and integration test, rebuilding the Docker image, and deploying it to the VPS, leading to an improved developer experience with a one-step deployment process.
 
-      - name: ps-typer
-        date: '[PyPi](https://pypi.org/project/ps-typer/) | [Code](https://github.com/Rolv-Apneseth/ps-typer)'
+      - name: frankfurte-rs
+        date: '[Crate](https://crates.io/crates/frankfurter_cli) | [Docs](https://docs.rs/lib_frankfurter) | [Code](https://github.com/Rolv-Apneseth/frankfurte-rs)'
         highlights:
-          - A GUI application written in Python using PyQt5, made for practising typing with a modern, minimalistic UI, made using the PyQt5 library for Python. I used this application to go from 40 WPM to 85 WPM and continue to use it to this day.
-          - Leveraged various corpora of text from the NLTK library to generate near endless content of full, proper sentences for a user to practice typing with. This was one of my main goals in creating this project.
-          - Implemented a user statistics system with the use of a local SQLite3 database, so that users can track the progression of their typing speeds. The results are visualised using PyQtGraph for easy consumption.
+          - Rust library and CLI to interface with Frankfurter, a currency exchange rate API, to
+            enable efficient retrieval and processing of exchange rate data via safe and correct bindings.
+          - Implemented custom, restrictive types to validate dates and currency values, ensuring
+            only valid data is sent to API.
+          - Created comprehensive unit and integration tests, including property based tests for
+            custom types to ensure they can handle any inputs. Tests are only run against locally
+            hosted versions of the API setup via a custom docker-compose file, for efficient
+            testing without impacting the public API.
+
+      # Other projects - in case
+      # - name: ps-typer
+      #   date: '[PyPi](https://pypi.org/project/ps-typer/) | [Code](https://github.com/Rolv-Apneseth/ps-typer)'
+      #   highlights:
+      #     - A GUI application written in Python using PyQt5, made for practising typing with a modern, minimalistic UI, made using the PyQt5 library for Python. I used this application to go from 40 WPM to 85 WPM and continue to use it to this day.
+      #     - Leveraged various corpora of text from the NLTK library to generate near endless content of full, proper sentences for a user to practice typing with. This was one of my main goals in creating this project.
+      #     - Implemented a user statistics system with the use of a local SQLite3 database, so that users can track the progression of their typing speeds. The results are visualised using PyQtGraph for easy consumption.
 
       # - name: rofi-games
       #   date: '[Crate](https://crates.io/crates/lib_game_detector) | [Code](https://github.com/Rolv-Apneseth/rofi-games)'
       #   highlights:
-      #     - A plugin for the Rofi application launcher on Linux, written in Rust, which adds a mode for neatly displaying and launching games available from multiple sources on a user's system. This is one of my favourite projects, created because I wanted to save time in selecting and launching games on my system.
-      #     - Games are efficiently parsed at runtime from various configuration files for common game sources, such as Steam or Lutris, using the nom library. This allows a user to access their entire gaming collection in a single, light-weight launcher which takes milliseconds to detect all their games.
-      #     - A configuration file can optionally be created to modify parsed entries or define custom ones, allowing the user to customise and extend the available options for the launcher to their liking.
-      #
+      #     - A plugin for the Rofi application launcher on Linux, written in Rust, which adds a mode for neatly displaying and launching games available from multiple sources on a user's system. It saves users time launching or modifying games on their system by avoiding navigating cluttered game launcher UIs.
+      #     - Games are efficiently parsed at runtime from various configuration files for common game sources, such as Steam or Lutris, using the nom parser combinator library. This allows users to access their entire gaming collection in a single, light-weight launcher which takes milliseconds to detect all their games.
+      #     - Support for a configuration file is included to allow modifying parsed entries or defining custom ones, allowing users to customise and extend the available options for the launcher to their liking.
+
     Open Source Contributions:
-      - label: '[Yazi](https://github.com/sxyazi/yazi/pulls?q=is:pr+author:Rolv-Apneseth+is:merged)'
+      - label: '[Yazi](https://github.com/sxyazi/yazi/pulls?q=is:pr+author:Rolv-Apneseth+is:merged) (Rust | Tokio)'
         details: A modern terminal file manager
 
-      - label: '[languagetool-rust](https://github.com/jeertmans/languagetool-rust/pulls?q=is:pr+author:Rolv-Apneseth+is:merged)'
+      - label: '[languagetool-rust](https://github.com/jeertmans/languagetool-rust/pulls?q=is:pr+author:Rolv-Apneseth+is:merged) (Rust | Tokio | Clap)'
         details: Rust bindings to connect with a LanguageTool server API
 
-      - label: '[rustywind](https://github.com/avencera/rustywind/pulls?q=is:pr+author:Rolv-Apneseth)'
+      - label: '[rustywind](https://github.com/avencera/rustywind/pulls?q=is:pr+author:Rolv-Apneseth) (Rust)'
         details: Formatting tool for sorting Tailwind CSS classes
 
-      - label: '[wpaperd](https://github.com/danyspin97/wpaperd/pulls?q=is:pr+author:Rolv-Apneseth)'
+      - label: '[wpaperd](https://github.com/danyspin97/wpaperd/pulls?q=is:pr+author:Rolv-Apneseth) (Rust | Linux)'
         details: Minimal wallpaper daemon for Wayland on Linux
 
-      - label: '[libmacchina](https://github.com/Macchina-CLI/libmacchina/pulls?q=is:pr+author:Rolv-Apneseth)'
+      - label: '[libmacchina](https://github.com/Macchina-CLI/libmacchina/pulls?q=is:pr+author:Rolv-Apneseth) (Rust | Linux)'
         details: A Rust library providing access to all sorts of system information
 
-      - label: '[macchina](https://github.com/Macchina-CLI/macchina/pulls?q=is:pr+author:Rolv-Apneseth)'
+      - label: '[macchina](https://github.com/Macchina-CLI/macchina/pulls?q=is:pr+author:Rolv-Apneseth) (Rus)'
         details: CLI tool for displaying system information
 
-      - label: '[tldr](https://github.com/tldr-pages/tldr/pulls?q=is:pr+author:Rolv-Apneseth)'
+      - label: '[tldr](https://github.com/tldr-pages/tldr/pulls?q=is:pr+author:Rolv-Apneseth) (Docs | Linux)'
         details: A collection of help pages for command-line tools
 
 design:
@@ -133,7 +154,6 @@ design:
     use_icons_for_connections: true
     alignment: center
   section_titles:
-    # Misspelling is part of the spec
     type: 'with-full-line'
     font_size: 1.2em
     bold: true
