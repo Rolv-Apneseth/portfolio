@@ -13,20 +13,21 @@ cv:
         position: Junior Front-End Developer
         location: Remote, Ireland
         start_date: 2022-11
+        end_date: 2025-04
         highlights:
-          - Primary front-end developer of a web-based video investigation tool built using React,
+          - Primary developer for the front-end  of a web-based video investigation tool built using React,
             adapting the company's flagship desktop application to serve law enforcement and
             security clients globally in a more accessible format.
-          - Collaborate closely with the senior developer in charge of the project on architectural
+          - Collaborated closely with the senior developer in charge of the project on architectural
             decisions, ensuring seamless integration between front-end and back-end systems. In
-            addition, conduct thorough code reviews for back-end changes, both to identify potential
-            bugs and remain updated on relevant functionality.
-          - Build maintainable custom components (e.g. interactive video timeline with events, video overlays
+            addition, conducted thorough code reviews for back-end changes, both to identify potential
+            bugs and to remain up-to-date on relevant functionality.
+          - Built maintainable custom components (e.g. interactive video timeline with events, video overlays
             for motion detection, progress indicators for video import and analysis) using modern
-            features like hooks to minimise complexity while still enhancing user experience.
-          - Leverage Redux for state management and RTKQuery for efficient API handling,
+            React and CSS features to minimise complexity while still enhancing user experience.
+          - Leveraged Redux for state management and RTKQuery for efficient API handling,
             ensuring scalability and robust debugging capabilities.
-          - Develop comprehensive unit tests with Jest and maintain Azure DevOps CI/CD pipelines,
+          - Developed comprehensive unit tests with Jest and maintain Azure DevOps CI/CD pipelines,
             ensuring high code quality and reliability.
 
       - company: Bottletop Media
@@ -42,32 +43,23 @@ cv:
 
     Skills:
       - label: Languages
-        details: Rust | TypeScript | JavaScript | Lua | Python | Bash | Go
+        details: Rust | TypeScript | JavaScript | Lua | Python | Bash | SQL | Go
 
       - label: Technologies
-        details: React | Redux | HTML | CSS | SCSS | Tailwind CSS | Docker | GitHub Actions | OpenAPI
+        details: React | Redux | HTML | CSS | SCSS | Tailwind CSS | Docker | GitHub Actions
 
       - label: Interests
         details: Open-Source Software | Linux | Self-Hosting | Computer Building
 
       - label: Soft Skills
-        details: Focused | Self-Driven | Fast Learner | Pragmatic | Adaptable
+        details: Self-Driven | Passionate  | Fast Learner | Curious | Receptive to Feedback
 
       - label: Natural Languages
         details: English | Portuguese | Norwegian
 
     Personal Projects:
-      - name: World Wonders API
-        date: '[Docs](https://world-wonders-api.org/v0/docs) | [Code](https://github.com/Rolv-Apneseth/world-wonders-api)'
-        highlights:
-          - An API written in Rust using Axum, which provides information about famous architectural
-            wonders from around the world, created to explore back-end technologies as well as my
-            interest in history.
-          - Developed a Docker image for seamless self-hosting, accessible via Docker Hub, and
-            provided detailed documentation through a web page along with an OpenAPI specification.
-          - Automated CI/CD processes using GitHub Actions, including running unit and integration test, rebuilding the Docker image, and deploying it to the VPS, leading to an improved developer experience with a one-step deployment process.
-
       - name: frankfurte-rs
+        summary: "*Rust, Clap, Tokio, Reqwest, CI/CD*"
         date: '[Crate](https://crates.io/crates/frankfurter_cli) | [Docs](https://docs.rs/lib_frankfurter) | [Code](https://github.com/Rolv-Apneseth/frankfurte-rs)'
         highlights:
           - Rust library and CLI to interface with Frankfurter, a currency exchange rate API, to
@@ -76,44 +68,66 @@ cv:
             only valid data is sent to API.
           - Created comprehensive unit and integration tests, including property based tests for
             custom types to ensure they can handle any inputs. Tests are only run against locally
-            hosted versions of the API setup via a custom docker-compose file, for efficient
+            hosted versions of the API setup via a custom Docker compose file, for efficient
             testing without impacting the public API.
 
-      # Other projects - in case
-      # - name: ps-typer
-      #   date: '[PyPi](https://pypi.org/project/ps-typer/) | [Code](https://github.com/Rolv-Apneseth/ps-typer)'
-      #   highlights:
-      #     - A GUI application written in Python using PyQt5, made for practising typing with a modern, minimalistic UI, made using the PyQt5 library for Python. I used this application to go from 40 WPM to 85 WPM and continue to use it to this day.
-      #     - Leveraged various corpora of text from the NLTK library to generate near endless content of full, proper sentences for a user to practice typing with. This was one of my main goals in creating this project.
-      #     - Implemented a user statistics system with the use of a local SQLite3 database, so that users can track the progression of their typing speeds. The results are visualised using PyQtGraph for easy consumption.
+      - name: World Wonders API
+        date: '[Demo](https://world-wonders-api.org/v0/docs) | [Code](https://github.com/Rolv-Apneseth/world-wonders-api)'
+        summary: "*Rust, Axum, Docker, Open API, CI/CD*"
+        highlights:
+          - An API written in Rust using Axum, which provides information about famous architectural
+            wonders from around the world, created to explore back-end technologies as well as my
+            interest in history.
+          - Developed a Docker image for seamless self-hosting, accessible via Docker Hub, and
+            provided detailed documentation through a web page along with an OpenAPI specification.
+          - Automated CI/CD processes using GitHub Actions, including running unit and integration test, rebuilding the Docker image, and deploying it to the VPS, leading to an improved developer experience with a one-step deployment process.
+
+      - name: ps-typer
+        summary: "*Python, PyQt5, PyQtGraph, NLTK, SQLite*"
+        date: '[PyPi](https://pypi.org/project/ps-typer/) | [Code](https://github.com/Rolv-Apneseth/ps-typer)'
+        highlights:
+          - A GUI application written in Python using PyQt5, made for practising typing with a modern, minimalistic UI, made using the PyQt5 library for Python. I used this application to go from 40 WPM to 85 WPM and continue to use it to this day.
+          - Leveraged various corpora of text from the NLTK library to generate near endless content of full, proper sentences for a user to practice typing with. This was one of my main goals in creating this project.
+          - Implemented a user statistics system with the use of a local SQLite3 database, so that users can track the progression of their typing speeds. The results are visualised using PyQtGraph for easy consumption.
 
       # - name: rofi-games
+      #   summary: "*Rust, Nom*"
       #   date: '[Crate](https://crates.io/crates/lib_game_detector) | [Code](https://github.com/Rolv-Apneseth/rofi-games)'
       #   highlights:
-      #     - A plugin for the Rofi application launcher on Linux, written in Rust, which adds a mode for neatly displaying and launching games available from multiple sources on a user's system. It saves users time launching or modifying games on their system by avoiding navigating cluttered game launcher UIs.
-      #     - Games are efficiently parsed at runtime from various configuration files for common game sources, such as Steam or Lutris, using the nom parser combinator library. This allows users to access their entire gaming collection in a single, light-weight launcher which takes milliseconds to detect all their games.
-      #     - Support for a configuration file is included to allow modifying parsed entries or defining custom ones, allowing users to customise and extend the available options for the launcher to their liking.
+      #     - A plugin for the Rofi application launcher on Linux, written in Rust, which adds a mode for
+      #       neatly displaying and launching games available from multiple sources on a user's system.
+      #       It saves users time launching or modifying games on their system by avoiding navigating
+      #       cluttered and resource-intensive game launcher UIs.
+      #     - Extracted the core parsing logic into a separate Rust library to make that functionality
+      #       widely available to other developers.
+      #     - Designed the library to efficiently parse games at runtime from various configuration
+      #       files for common game sources, such as Steam or Lutris, using the nom parser combinator
+      #       library. This allows users to access their entire gaming collection in a single, light-weight
+      #       launcher which takes milliseconds to detect and display all their games.
+      #     - Extended customisability by supporting a configuration file for modifying parsed entries
+      #       and defining entirely custom ones, allowing users to personalise and extend the available
+      #       options for the launcher to their liking.
 
     Open Source Contributions:
-      - label: '[Yazi](https://github.com/sxyazi/yazi/pulls?q=is:pr+author:Rolv-Apneseth+is:merged) (Rust | Tokio)'
+      - label: '[Yazi](https://github.com/sxyazi/yazi/pulls?q=is:pr+author:Rolv-Apneseth+is:merged) *(Rust, Tokio)*'
         details: A modern terminal file manager
 
-      - label: '[languagetool-rust](https://github.com/jeertmans/languagetool-rust/pulls?q=is:pr+author:Rolv-Apneseth+is:merged) (Rust | Tokio | Clap)'
+      - label: '[languagetool-rust](https://github.com/jeertmans/languagetool-rust/pulls?q=is:pr+author:Rolv-Apneseth+is:merged) *(Rust, Tokio, Clap)*'
         details: Rust bindings to connect with a LanguageTool server API
 
-      - label: '[rustywind](https://github.com/avencera/rustywind/pulls?q=is:pr+author:Rolv-Apneseth) (Rust)'
+      - label: '[rustywind](https://github.com/avencera/rustywind/pulls?q=is:pr+author:Rolv-Apneseth) *(Rust)*'
         details: Formatting tool for sorting Tailwind CSS classes
 
-      - label: '[wpaperd](https://github.com/danyspin97/wpaperd/pulls?q=is:pr+author:Rolv-Apneseth) (Rust | Linux)'
+      - label: '[wpaperd](https://github.com/danyspin97/wpaperd/pulls?q=is:pr+author:Rolv-Apneseth) *(Rust, Linux, Clap)*'
         details: Minimal wallpaper daemon for Wayland on Linux
 
-      - label: '[libmacchina](https://github.com/Macchina-CLI/libmacchina/pulls?q=is:pr+author:Rolv-Apneseth) (Rust | Linux)'
+      - label: '[libmacchina](https://github.com/Macchina-CLI/libmacchina/pulls?q=is:pr+author:Rolv-Apneseth) *(Rust, Linux)*'
         details: A Rust library providing access to all sorts of system information
 
-      - label: '[macchina](https://github.com/Macchina-CLI/macchina/pulls?q=is:pr+author:Rolv-Apneseth) (Rus)'
+      - label: '[macchina](https://github.com/Macchina-CLI/macchina/pulls?q=is:pr+author:Rolv-Apneseth) *(Rust, Clap)*'
         details: CLI tool for displaying system information
 
-      - label: '[tldr](https://github.com/tldr-pages/tldr/pulls?q=is:pr+author:Rolv-Apneseth) (Docs | Linux)'
+      - label: '[tldr](https://github.com/tldr-pages/tldr/pulls?q=is:pr+author:Rolv-Apneseth) *(Documentation, Linux)*'
         details: A collection of help pages for command-line tools
 
 design:
@@ -122,10 +136,10 @@ design:
     size: a4
     show_page_numbering: false
     show_last_updated_date: false
-    top_margin: 1cm
-    bottom_margin: 1cm
-    left_margin: 1cm
-    right_margin: 1cm
+    top_margin: 1.5cm
+    bottom_margin: 1.5cm
+    left_margin: 2.5cm
+    right_margin: 2.5cm
   colors:
     text: '#222222'
     name: '#222222'
@@ -137,7 +151,7 @@ design:
     # font_family: 'Source Sans 3'
     font_family: 'XCharter'
     font_size: 10pt
-    leading: 0.55em
+    leading: 0.7em
     alignment: justified
     date_and_location_column_alignment: right
   links:
@@ -158,21 +172,21 @@ design:
     font_size: 1.2em
     bold: true
     small_caps: false
-    line_thickness: 0.5pt
+    line_thickness: 0.3pt
     vertical_space_above: 0.5cm
-    vertical_space_below: 0.2cm
+    vertical_space_below: 0.3cm
   entries:
     date_and_location_width: 4.15cm
-    left_and_right_margin: 0.2cm
+    left_and_right_margin: 0.5cm
     horizontal_space_between_columns: 0.1cm
-    vertical_space_between_entries: 0.25cm
-    allow_page_break_in_entries: true
+    vertical_space_between_entries: 0.35cm
+    allow_page_break_in_entries: false
     short_second_row: false
     show_time_spans_in: []
   highlights:
     bullet: •
     top_margin: 0.25cm
-    left_margin: 0.2cm
+    left_margin: 0.5cm
     vertical_space_between_highlights: 0.25cm
     horizontal_space_between_bullet_and_highlight: 0.5em
     summary_left_margin: 0cm
