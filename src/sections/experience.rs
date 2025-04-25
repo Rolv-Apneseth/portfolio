@@ -82,21 +82,24 @@ pub fn ExperienceSection() -> impl IntoView {
                 "https://www.kinesense-vca.com/",
                 "Junior Frontend Developer",
                 &[
-                    "Develop the front end for re-creating the company’s flagship desktop application (a complex video analysis tool) as a web-based platform which will service clients from around the world.",
-                    "Migrated all old class-based React components to more maintainable and extendable functional compo- nents, also fixing critical bugs along the way.",
-                    "Leverage Redux to manage intricate client-side state and RTKQuery for querying and caching API responses from the back end, allowing for easy extension of required state, and simpler debugging of related issues.",
-                    "Create comprehensive unit tests using Jest, and maintain Azure DevOps CI/CD workflows, ensuring the reliability of the web application.",
+                    "Primary developer for the front-end  of a web-based video investigation application built using React, adapting the company's flagship desktop application to serve law enforcement and security clients globally in a more accessible format.",
+                    "Collaborated closely with the senior developer in charge of the project on architectural decisions, ensuring seamless integration between front-end and back-end systems. In addition, conducted thorough code reviews for back-end changes, both to identify potential bugs and to remain up-to-date on relevant functionality.",
+                    "Built maintainable custom components (e.g. interactive video timeline with events, video overlays for motion detection, progress indicators for video import and analysis) using modern React and CSS features to minimise complexity while still enhancing user experience.",
+                    "Leveraged Redux for state management and RTKQuery for efficient API handling, ensuring scalability and robust debugging capabilities.",
+                    "Developed comprehensive unit tests with Jest and maintain Azure DevOps CI/CD pipelines, ensuring high code quality and reliability.",
                 ],
-                ["2022", "Present"],
+                ["Nov 2022", "Apr 2025"],
                 [
                     Tech::Ts,
                     Tech::React,
                     Tech::Redux,
                     Tech::RTKQuery,
+                    Tech::Html,
+                    Tech::Css,
+                    Tech::Scss,
+                    Tech::Bs,
                     Tech::Az,
                     Tech::Jest,
-                    Tech::Bs,
-                    Tech::Scss,
                 ],
             ) />
             <Experience data=ExperienceData::new(
@@ -104,12 +107,13 @@ pub fn ExperienceSection() -> impl IntoView {
                 "https://iclass-cms.com/",
                 "Junior Frontend Developer",
                 &[
-                    "Updated and maintained websites for over 1000 existing clients using modern HTML, CSS, and JavaScript.",
-                    "Implemented unique designs and features upon request, leading to increased customer satisfaction.",
-                    "Developed a custom Selenium (browser automation) script in Python to automate the creation of page structures on the company’s proprietary CMS software for new clients’ websites, significantly speeding up the initial development stages.",
+                    "Optimised and maintained websites for over 1000 existing clients using modern HTML, CSS, and JavaScript.",
+                    "Implemented custom styling and interactive features for clients, leading to increased customer satisfaction.",
+                    "Using modern CSS and a touch of VB.NET, created demo websites with unique, custom layouts for big potential clients, greatly increasing their interest in the company's product.",
+                    "Developed a custom Selenium (browser automation) script in Python to automate the creation of page structures on the company's proprietary CMS software for new clients' websites, speeding up the initial setup stage by over 200%.",
                 ],
-                ["2021", "2022"],
-                [Tech::Js, Tech::Html, Tech::Css, Tech::Py],
+                ["Sep 2021", "Nov 2022"],
+                [Tech::Js, Tech::Html, Tech::Css, Tech::Py, Tech::Selenium],
             ) />
         </ol>
 
