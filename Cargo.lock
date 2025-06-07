@@ -1435,7 +1435,7 @@ dependencies = [
  "leptos_meta",
  "reqwasm",
  "serde",
- "thiserror 1.0.69",
+ "thiserror 2.0.12",
  "wasm-bindgen",
 ]
 
