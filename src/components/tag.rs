@@ -40,6 +40,9 @@ pub enum Tech {
     Lua,
     Neovim,
     Docker,
+    Tokio,
+    PostgreSQL,
+    Sqlx,
 }
 
 impl fmt::Display for Tech {
@@ -56,6 +59,9 @@ impl fmt::Display for Tech {
                 Tech::Tracing => "Tracing",
                 Tech::Nom => "Nom",
                 Tech::Leptos => "Leptos",
+                Tech::Tokio => "Tokio",
+                Tech::PostgreSQL => "PostgreSQL",
+                Tech::Sqlx => "SQLX",
                 Tech::Strum => "Strum",
                 Tech::Lua => "Lua",
                 Tech::Neovim => "Neovim",
