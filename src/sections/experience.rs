@@ -43,14 +43,14 @@ pub fn Experience(#[prop()] data: ExperienceData) -> impl IntoView {
                 href=data.workplace_href
                 target="_blank"
                 rel="noreferrer noopener"
-                class="grid gap-1 py-6 px-3 rounded-md duration-300 sm:grid-cols-8 motion-reduce:transition-none lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:hover:bg-slate-300/50 lg:dark:hover:bg-slate-800/50 lg:hover:shadow[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg"
+                class="grid gap-1 py-6 px-3 rounded-md duration-300 sm:grid-cols-8 motion-reduce:transition-none lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:hover:bg-slate-300/20 lg:dark:hover:bg-slate-800/50 lg:hover:shadow[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg"
             >
-                <header class="z-10 m-0 text-xs font-semibold tracking-wide uppercase sm:col-span-2 text-slate-500 dark:text-slate-500">
+                <header class="z-10 m-0 text-xs font-semibold tracking-wide uppercase sm:col-span-2 text-slate-600 dark:text-slate-500">
                     {format!("{} — {}", data.range[0], data.range[1])}
                 </header>
 
                 <div class="flex z-10 flex-col gap-3 sm:col-span-6">
-                    <h4 class="text-sm font-medium leading-snug text-slate-800 dark:text-slate-200">
+                    <h4 class="text-sm font-semibold leading-snug text-slate-800 dark:text-slate-200">
                         <span class="">{data.position}</span>
                         {" · "}
                         <span class="">{data.workplace}</span>

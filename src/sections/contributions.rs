@@ -104,14 +104,14 @@ pub fn Contributions(#[prop()] data: ContributionsData) -> impl IntoView {
         .map(|pr| {
             let fill = match pr.state.as_str() {
                 "closed" => "fill-violet-700 dark:fill-purple-500",
-                "open" => "fill-green-500",
+                "open" => "fill-green-600 dark:fill-green-500",
                 _ => "",
             };
 
             view! {
                 <li>
                     <a
-                        class="flex gap-2 items-center text-sm duration-200 transition-text-color hover:text-slate-950 hover:dark:text-slate-200"
+                        class="flex gap-2 items-center text-sm duration-200 transition-text-color text-slate-700 dark:text-slate-400 hover:text-slate-950 hover:dark:text-slate-200"
                         href=pr.html_url.to_owned()
                     >
                         <span>
@@ -128,14 +128,14 @@ pub fn Contributions(#[prop()] data: ContributionsData) -> impl IntoView {
         .collect_view();
 
     view! {
-        <li class="py-4 rounded-md transition-all duration-300 ps-2 motion-reduce:transition-none lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:hover:bg-slate-300/50 lg:dark:hover:bg-slate-800/50 lg:hover:shadow[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
+        <li class="py-4 rounded-md transition-all duration-300 ps-2 motion-reduce:transition-none lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:hover:bg-slate-300/20 lg:dark:hover:bg-slate-800/50 lg:hover:shadow[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
             <a
                 class="text-slate-700 dark:text-slate-200"
                 href=data.url
                 target="_blank"
                 rel="noreferrer noopener"
             >
-                <h4 class="flex gap-1 items-center mb-2 font-medium leading-snug">
+                <h4 class="flex gap-1 items-center mb-2 font-medium leading-snug text-slate-900 dark:text-slate-200">
                     <Icon icon=icondata::IoCaretForward />
                     {data.title}
                 </h4>
