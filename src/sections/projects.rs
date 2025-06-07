@@ -9,6 +9,21 @@ use crate::components::tag::{
 type ProjectDataInput<'a> = (&'a str, &'a str, &'a [&'a str], &'a [&'a str], &'a [Tech]);
 const PROJECTS: &[ProjectDataInput] = &[
     (
+        "curto · Link-shortening RESTful API",
+        "curto.webp",
+        &[
+            "https://github.com/Rolv-Apneseth/curto",
+            "https://hub.docker.com/r/rolvapneseth/curto",
+        ],
+        &[
+            "An API written using Axum, providing an easy-to-use and self-hostable link/URL shortening service.",
+            "The Rust code interacts with the PostgreSQL database using the SQLX crate, providing compile-time checked queries.",
+            "Utoipa is used to automatically generate an OpenAPI specification, as well as provide a Scalar documentation page so it can be easily viewed and interacted with from the browser.",
+            "GitHub Actions automate CI/CD processes, testing the code as well as rebuilding and publishing the latest Docker image. A docker-compose.yml file is also provided to the user to simplify hosting the service along with the database it requires.",
+        ],
+        &[Tech::Rust, Tech::PostgreSQL, Tech::Docker, Tech::Axum, Tech::Sqlx, Tech::Tokio, Tech::Serde],
+    ),
+    (
         "frankfurter-rs · Rust bindings to the Frankfurter API",
         "frs.webp",
         &["https://github.com/Rolv-Apneseth/https://github.com/Rolv-Apneseth/frankfurte-rs",
@@ -23,7 +38,11 @@ const PROJECTS: &[ProjectDataInput] = &[
     (
         "world-wonders-api · API providing information about World Wonders",
         "world-wonders-api.webp",
-        &["https://github.com/Rolv-Apneseth/world-wonders-api", "https://world-wonders-api.org/v0/docs"],
+        &[
+            "https://github.com/Rolv-Apneseth/world-wonders-api",
+            "https://hub.docker.com/r/rolvapneseth/world-wonders-api",
+            "https://world-wonders-api.org/v0/docs",
+        ],
         &[
             "An API written using axum, providing information about famous cultural wonders from around the world, such as the Colosseum, the Taj Mahal, Stonehenge, and many more.",
             "This API can be accessed through a demo available for anyone to use, or it can be self-hosted via a Docker image available on Docker Hub. Comprehensive documentation is also provided in the form of a documentation web page which also includes an OpenAPI specification, for ease of use.",
@@ -164,6 +183,7 @@ pub fn Project(#[prop()] data: ProjectData) -> impl IntoView {
         data.urls.into_iter()
             .map(|u| match u.split('/').nth(2) {
                 Some("github.com") => (u, icondata::BiGithub, "GitHub repository"),
+                Some("hub.docker.com") => (u, icondata::BiDocker, "GitHub repository"),
                 Some("pypi.org") => (u, icondata::BiPython, "pypi.org distribution"),
                 Some("crates.io") => (u, icondata::LuBoxes, "crates.io distribution"),
                 _ => (u, icondata::BiLinkRegular, "Live demo"),
