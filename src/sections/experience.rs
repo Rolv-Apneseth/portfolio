@@ -1,4 +1,4 @@
-use leptos::*;
+use leptos::prelude::*;
 use leptos_icons::Icon;
 
 use crate::components::tag::{
@@ -61,7 +61,7 @@ pub fn Experience(#[prop()] data: ExperienceData) -> impl IntoView {
                             .description
                             .iter()
                             .map(|d| {
-                                view! { <li class="text-sm leading-normal">{d}</li> }
+                                view! { <li class="text-sm leading-normal">{d.to_owned()}</li> }
                             })
                             .collect::<Vec<_>>()}
                     </ul>

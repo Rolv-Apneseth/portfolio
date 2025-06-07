@@ -1,4 +1,7 @@
-use leptos::*;
+use leptos::{
+    html,
+    prelude::*,
+};
 use leptos_use::use_intersection_observer;
 
 use crate::utils::capitalise;
@@ -22,14 +25,14 @@ pub fn Section(
     #[prop()] is_visible: WriteSignal<bool>,
     children: Children,
 ) -> impl IntoView {
-    let node_ref = create_node_ref::<html::Section>();
+    let el = NodeRef::<html::Section>::new();
 
-    use_intersection_observer(node_ref, move |entries, _| {
+    use_intersection_observer(el, move |entries, _| {
         is_visible.set(entries[0].is_intersecting());
     });
 
     view! {
-        <section _ref=node_ref id=section_data.id>
+        <section node_ref=el id=section_data.id>
             <h3 class="flex gap-4 items-center mb-2 text-2xl lg:text-3xl after:inline-block after:flex-grow after:h-[1px] text-slate-800 after:bg-slate-800 after:dark:bg-slate-200 dark:text-slate-200">
                 {section_data.title}
             </h3>

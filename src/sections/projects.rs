@@ -1,4 +1,4 @@
-use leptos::*;
+use leptos::prelude::*;
 use leptos_icons::Icon;
 
 use crate::components::tag::{
@@ -153,7 +153,7 @@ impl ProjectData {
             path_image: format!("/public/project_demos/{}", input.1),
             urls: input.2.iter().map(|s| s.to_string()).collect(),
             description: input.3.iter().map(|s| s.to_string()).collect(),
-            techs: input.4.iter().copied().collect(),
+            techs: input.4.to_vec(),
         }
     }
 }
@@ -179,8 +179,8 @@ pub fn Project(#[prop()] data: ProjectData) -> impl IntoView {
                             rel="noreferrer noopener"
                         >
                             <Icon
-                                class="w-6 h-6 duration-200 group-hover:-translate-y-1 motion-safe:transition-transform"
                                 icon=icon
+                                attr:class="w-6 h-6 duration-200 group-hover:-translate-y-1 motion-safe:transition-transform"
                             />
                         </a>
                     </li>
@@ -201,12 +201,12 @@ pub fn Project(#[prop()] data: ProjectData) -> impl IntoView {
 
             <a
                 class="sm:col-span-3 lg:px-2 h-max"
-                href=&data.path_image
+                href=data.path_image.clone()
                 title="Open image"
                 target="_blank"
                 rel="noreferrer noopener"
             >
-                <img class="rounded-md shadow-lg" alt="Demo image" src=data.path_image />
+                <img class="rounded-md shadow-lg" alt="Demo image" src=data.path_image.clone() />
             </a>
 
             <div class="flex flex-col gap-3 sm:col-span-5">
@@ -215,7 +215,7 @@ pub fn Project(#[prop()] data: ProjectData) -> impl IntoView {
                         .description
                         .iter()
                         .map(|d| {
-                            view! { <li class="text-sm leading-normal">{d}</li> }
+                            view! { <li class="text-sm leading-normal">{d.to_owned()}</li> }
                         })
                         .collect::<Vec<_>>()}
                 </ul>

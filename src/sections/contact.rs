@@ -1,5 +1,5 @@
 use icondata::Icon as IconData;
-use leptos::*;
+use leptos::prelude::*;
 use leptos_icons::Icon;
 
 pub struct ContactLinkData {
@@ -30,8 +30,8 @@ pub fn ContactLink(#[prop()] data: ContactLinkData) -> impl IntoView {
                 href=data.href
             >
                 <Icon
-                    class="w-7 h-7 transition-transform duration-200 group-hover:-translate-y-1 motion-reduce:transition-none"
                     icon=data.icon
+                    attr:class="w-7 h-7 transition-transform duration-200 group-hover:-translate-y-1 motion-reduce:transition-none"
                 />
             </a>
         </li>
