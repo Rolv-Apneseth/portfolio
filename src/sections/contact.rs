@@ -22,7 +22,7 @@ pub fn ContactLink(#[prop()] data: ContactLinkData) -> impl IntoView {
     view! {
         <li>
             <a
-                class="duration-200 group transition-text-color motion-reduce:transition-none dark:hover:text-slate-200 hover:text-slate-950"
+                class="duration-200 group transition-text-color motion-reduce:transition-none text-slate-800/90 dark:text-slate-400 dark:hover:text-slate-200 hover:text-slate-950"
                 aria-label=format!("Link to {} - opens in a new tab", data.label)
                 title=data.label
                 target="_blank"
