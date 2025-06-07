@@ -9,7 +9,10 @@ use crate::{
         contributions::ContributionsSection,
         experience::ExperienceSection,
         footer::Footer,
-        nav::Nav,
+        nav::{
+            Nav,
+            Sections,
+        },
         projects::{
             ArchivedProjectsSection,
             ProjectsSection,
@@ -25,7 +28,7 @@ use crate::{
 pub fn App() -> impl IntoView {
     provide_meta_context();
 
-    let sections = vec![
+    let sections: Sections = vec![
         ("experience".to_string(), signal(false)),
         ("projects".to_string(), signal(false)),
         ("archive".to_string(), signal(false)),

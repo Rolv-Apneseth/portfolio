@@ -1,5 +1,7 @@
 use leptos::prelude::*;
 
+pub type Sections = Vec<(String, (ReadSignal<bool>, WriteSignal<bool>))>;
+
 #[component]
 pub fn NavLink(#[prop()] title: String, #[prop()] is_visible: ReadSignal<bool>) -> impl IntoView {
     view! {
@@ -15,9 +17,7 @@ pub fn NavLink(#[prop()] title: String, #[prop()] is_visible: ReadSignal<bool>) 
 }
 
 #[component]
-pub fn Nav(
-    #[prop()] sections: Vec<(String, (ReadSignal<bool>, WriteSignal<bool>))>,
-) -> impl IntoView {
+pub fn Nav(#[prop()] sections: Sections) -> impl IntoView {
     let links_views = sections
         .into_iter()
         .map(|(label, is_visible)| {
