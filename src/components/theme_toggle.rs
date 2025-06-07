@@ -1,4 +1,4 @@
-use leptos::*;
+use leptos::prelude::*;
 use leptos_darkmode::Darkmode;
 use leptos_icons::Icon;
 
@@ -15,8 +15,8 @@ pub fn ThemeToggle() -> impl IntoView {
         }
     };
 
-    let (icon, set_icon) = create_signal(icondata::BiMoonSolid);
-    create_effect(move |_| set_icon(get_icon()));
+    let (icon, set_icon) = signal(icondata::BiMoonSolid);
+    Effect::new(move |_| set_icon(get_icon()));
 
     view! {
         <button
@@ -25,7 +25,7 @@ pub fn ThemeToggle() -> impl IntoView {
             class="absolute top-3 right-3 py-2 px-3 w-max font-semibold leading-5 text-gray-100 bg-violet-700 rounded-md duration-200 pointer-events-auto dark:bg-purple-600 hover:bg-violet-800 transition-bg-color dark:hover:bg-purple-500"
             on:click=move |_| darkmode.toggle()
         >
-            <Icon class="text-2xl" icon=icon />
+            <Icon icon=icon attr:class="text-2xl" />
         </button>
     }
 }

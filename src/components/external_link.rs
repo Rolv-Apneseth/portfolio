@@ -1,4 +1,4 @@
-use leptos::*;
+use leptos::prelude::*;
 
 #[component]
 pub fn ExternalLink(#[prop()] href: String, #[prop()] content: String) -> impl IntoView {

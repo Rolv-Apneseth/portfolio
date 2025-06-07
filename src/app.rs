@@ -1,4 +1,4 @@
-use leptos::*;
+use leptos::prelude::*;
 use leptos_darkmode::Darkmode;
 use leptos_meta::*;
 
@@ -24,24 +24,24 @@ use crate::{
 #[component]
 pub fn App() -> impl IntoView {
     provide_meta_context();
-    let darkmode = Darkmode::init();
 
     let sections = vec![
-        ("experience".to_string(), create_signal(false)),
-        ("projects".to_string(), create_signal(false)),
-        ("archive".to_string(), create_signal(false)),
-        ("contributions".to_string(), create_signal(false)),
+        ("experience".to_string(), signal(false)),
+        ("projects".to_string(), signal(false)),
+        ("archive".to_string(), signal(false)),
+        ("contributions".to_string(), signal(false)),
     ];
+    let darkmode = Darkmode::init();
 
     let sections_views = sections
         .iter()
         .map(|(label, is_visible)| {
             let child = match label.as_str() {
-                "experience" => view! { <ExperienceSection /> },
-                "contributions" => view! { <ContributionsSection /> },
-                "projects" => view! { <ProjectsSection /> },
-                "archive" => view! { <ArchivedProjectsSection /> },
-                _ => unreachable!(),
+                "experience" => view! { <ExperienceSection /> }.into_any(),
+                "contributions" => view! { <ContributionsSection /> }.into_any(),
+                "projects" => view! { <ProjectsSection /> }.into_any(),
+                "archive" => view! { <ArchivedProjectsSection /> }.into_any(),
+                _ => unreachable!("unknown label"),
             };
 
             view! {
@@ -54,11 +54,15 @@ pub fn App() -> impl IntoView {
 
     view! {
         <Html
+            {..}
             lang="en"
             class=move || if darkmode.is_dark() { "scroll-smooth dark" } else { "scroll-smooth" }
         />
 
-        <Body class="relative py-12 px-6 mx-auto max-w-screen-xl min-h-screen antialiased leading-relaxed duration-300 md:py-20 md:px-12 lg:py-0 lg:px-24 bg-slate-200 transition-bg-color motion-reduce:transition-none dark:bg-primary dark:text-slate-400 dark:selection:bg-teal-300 dark:selection:text-teal-900" />
+        <Body
+            {..}
+            class="relative py-12 px-6 mx-auto max-w-screen-xl min-h-screen antialiased leading-relaxed duration-300 md:py-20 md:px-12 lg:py-0 lg:px-24 bg-slate-200 transition-bg-color motion-reduce:transition-none dark:bg-primary dark:text-slate-400 dark:selection:bg-teal-300 dark:selection:text-teal-900"
+        />
 
         <ThemeToggle />
 

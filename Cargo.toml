@@ -5,15 +5,21 @@ edition = "2021"
 
 [dependencies]
 console_error_panic_hook = "0.1.7"
-icondata = "0.3.0"
-leptos = { version = "0.6.11", features = ["csr", "nightly"] }
-leptos-use = "0.10.7"
-leptos_darkmode = "0.2.0"
-leptos_icons = "0.3.0"
-leptos_meta = { version = "0.6.11", features = ["csr", "nightly"] }
+icondata = "0.5.0"
+leptos = { version = "0.8.2", features = ["csr", "nightly"] }
+leptos_darkmode = { version = "0.*" }
+leptos_icons = "0.6.1"
+leptos_meta = { version = "0.8.2" }
+leptos-use = { git = "https://github.com/Synphonyte/leptos-use", version = "0.16.0-beta2", default-features = false, features = [
+  "use_intersection_observer",
+] }
 reqwasm = "0.5.0"
 serde = { version = "1", features = ["derive"] }
 thiserror = "1"
+wasm-bindgen = "0.2.*"
+
+[patch.crates-io]
+leptos_darkmode = { git = "https://gitlab.com/Rolv-Apneseth/leptos_darkmode.git", branch = "leptos-v0.8" }
 
 [profile.wasm-release]
 inherits = "release"

@@ -1,6 +1,6 @@
 use leptos::{
-    error::Result,
-    *,
+    error::Error,
+    prelude::*,
 };
 use leptos_icons::Icon;
 use serde::{
@@ -67,8 +67,8 @@ pub struct ContributionsData {
 
 impl ContributionsData {
     fn new(base_prs: &[GithubPr], repo: &str, title: &str) -> Self {
-        let url = format!("https://github.com/{}", repo);
-        let repo_api_url = format!("https://api.github.com/repos/{}", repo);
+        let url = format!("https://github.com/{repo}");
+        let repo_api_url = format!("https://api.github.com/repos/{repo}");
 
         let prs = base_prs
             .iter()
@@ -85,7 +85,7 @@ impl ContributionsData {
 }
 
 /// Fetch pull requests from GitHub
-async fn fetch_prs(_: ()) -> Result<Vec<GithubPr>> {
+async fn fetch_prs() -> Result<Vec<GithubPr>, Error> {
     let json = reqwasm::http::Request::get(PRS_URL)
         .send()
         .await?
@@ -112,12 +112,15 @@ pub fn Contributions(#[prop()] data: ContributionsData) -> impl IntoView {
                 <li>
                     <a
                         class="flex gap-2 items-center text-sm duration-200 transition-text-color hover:text-slate-950 hover:dark:text-slate-200"
-                        href=&pr.html_url
+                        href=pr.html_url.to_owned()
                     >
                         <span>
-                            <Icon class=format!("h-6 w-6 {fill}") icon=icondata::IoGitPullRequest />
+                            <Icon
+                                icon=icondata::IoGitPullRequest
+                                attr:class=format!("h-6 w-6 {fill}")
+                            />
                         </span>
-                        <span class="flex-grow-0 flex-shrink-1">{&pr.title}</span>
+                        <span class="flex-grow-0 flex-shrink-1">{pr.title.to_owned()}</span>
                     </a>
                 </li>
             }
@@ -128,13 +131,13 @@ pub fn Contributions(#[prop()] data: ContributionsData) -> impl IntoView {
         <li class="py-4 rounded-md transition-all duration-300 ps-2 motion-reduce:transition-none lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:hover:bg-slate-300/50 lg:dark:hover:bg-slate-800/50 lg:hover:shadow[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
             <a
                 class="text-slate-700 dark:text-slate-200"
-                href=&data.url
+                href=data.url
                 target="_blank"
                 rel="noreferrer noopener"
             >
                 <h4 class="flex gap-1 items-center mb-2 font-medium leading-snug">
                     <Icon icon=icondata::IoCaretForward />
-                    {&data.title}
+                    {data.title}
                 </h4>
             </a>
             <ul class="flex flex-col gap-2 ps-5">{pr_views}</ul>
@@ -144,12 +147,13 @@ pub fn Contributions(#[prop()] data: ContributionsData) -> impl IntoView {
 
 #[component]
 pub fn ContributionsSection() -> impl IntoView {
-    let resource = create_local_resource(|| (), fetch_prs);
+    let resource = LocalResource::new(fetch_prs);
 
     let fallback_loading = move || {
-        view! { <div aria-role="status">"Loading..."</div> }
+        view! { <div attr:aria-role="status">"Loading..."</div> }
     };
-    let fallback_error = move |_errors: RwSignal<Errors>| {
+
+    let fallback_error = move |_errors| {
         view! {
             <section class="ps-5">
                 <h6 class="text-red-300">Error - Failed to fetch data from the GitHub API</h6>
