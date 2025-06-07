@@ -178,7 +178,7 @@ pub fn ContributionsSection() -> impl IntoView {
         <Transition fallback=fallback_loading>
             <ErrorBoundary fallback=fallback_error>
                 <aside class="mb-3 text-sm italic">
-                    Fetched using the
+                    Open source contributions fetched using the
                     <ExternalLink
                         href="https://docs.github.com/en/rest?apiVersion=2022-11-28".to_string()
                         content="GitHub API".to_string()
