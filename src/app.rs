@@ -80,7 +80,7 @@ pub fn App() -> impl IntoView {
                         Software Developer
                     </h2>
                     <p class="mt-4 max-w-xs leading-normal">
-                        A proactive learner with a strong work ethic, seeking to apply my knowledge and skills
+                        Lifelong learner with a focus on software development, dedicated to applying my technical skills to solve problems.
                     </p>
                     <Nav sections=sections />
                 </section>
