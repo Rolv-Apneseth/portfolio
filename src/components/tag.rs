@@ -43,6 +43,8 @@ pub enum Tech {
     Tokio,
     PostgreSQL,
     Sqlx,
+    Ratatui,
+    Rusqlite,
 }
 
 impl fmt::Display for Tech {
@@ -91,6 +93,8 @@ impl fmt::Display for Tech {
                 Tech::Flask => "Flask",
                 Tech::SqlAlchemy => "SQLAlchemy",
                 Tech::Docker => "Docker",
+                Tech::Ratatui => "Ratatui",
+                Tech::Rusqlite => "Rusqlite",
             }
         )
     }

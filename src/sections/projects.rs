@@ -9,6 +9,21 @@ use crate::components::tag::{
 type ProjectDataInput<'a> = (&'a str, &'a str, &'a [&'a str], &'a [&'a str], &'a [Tech]);
 const PROJECTS: &[ProjectDataInput] = &[
     (
+        "omaro · TUI for lobste.rs",
+        "omaro.webp",
+        &[
+            "https://github.com/Rolv-Apneseth/omaro",
+            "https://crates.io/crates/omaro",
+        ],
+        &[
+            "A cross-platform TUI for the lobste.rs website, allowing users to browse posts and comments from their terminal.",
+            "Data is fetched as needed from the API endpoints on lobste.rs using reqwest, and cached for re-use on page navigation.",
+            "Posts which are opened by the user are marked as such in the UI, and saved to an SQLite database for later sessions.",
+            "Highly customiseable UI, which can be configured by the user via a toml file to suit their preferences.",
+        ],
+        &[Tech::Rust, Tech::Sqlite, Tech::Ratatui, Tech::Rusqlite, Tech::Reqwest, Tech::Serde],
+    ),
+    (
         "curto · Link-shortening RESTful API",
         "curto.webp",
         &[
@@ -26,8 +41,10 @@ const PROJECTS: &[ProjectDataInput] = &[
     (
         "frankfurter-rs · Rust bindings to the Frankfurter API",
         "frs.webp",
-        &["https://github.com/Rolv-Apneseth/https://github.com/Rolv-Apneseth/frankfurte-rs",
-            "https://crates.io/crates/lib_frankfurter", "https://crates.io/crates/frankfurter_cli"],
+        &[
+            "https://github.com/Rolv-Apneseth/https://github.com/Rolv-Apneseth/frankfurte-rs",
+            "https://crates.io/crates/lib_frankfurter", "https://crates.io/crates/frankfurter_cli"
+        ],
         &[
             "Rust bindings to Frankfurter, a free, open-source and self-hostable currency exchange rate API. This project includes a library, to provide all the core functionality surrounding the API, and also a cross-platform CLI for directly utilising any instance of the API.",
             "By default, results are displayed in the form of formatted and (optionally) colour coded tables, allowing users to easily read the presented data. Options are also available for returning the unformatted data or JSON to allow users to pipe the output onwards for further processing.",
