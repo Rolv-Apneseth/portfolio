@@ -243,7 +243,12 @@ pub fn Project(#[prop()] data: ProjectData) -> impl IntoView {
                 target="_blank"
                 rel="noreferrer noopener"
             >
-                <img class="rounded-md shadow-lg" alt="Demo image" src=data.path_image.clone() />
+                <img
+                    class="rounded-md shadow-lg"
+                    alt="Demo image"
+                    loading="lazy"
+                    src=data.path_image.clone()
+                />
             </a>
 
             <div class="flex flex-col gap-3 sm:col-span-5">
