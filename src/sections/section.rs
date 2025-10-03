@@ -13,7 +13,7 @@ pub struct SectionData {
 impl SectionData {
     pub fn new(id: &str) -> Self {
         Self {
-            id: id.to_string(),
+            id: id.to_owned(),
             title: capitalise(id),
         }
     }

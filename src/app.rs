@@ -29,10 +29,10 @@ pub fn App() -> impl IntoView {
     provide_meta_context();
 
     let sections: Sections = vec![
-        ("experience".to_string(), signal(false)),
-        ("projects".to_string(), signal(false)),
-        ("archive".to_string(), signal(false)),
-        ("contributions".to_string(), signal(false)),
+        ("experience".to_owned(), signal(false)),
+        ("projects".to_owned(), signal(false)),
+        ("archive".to_owned(), signal(false)),
+        ("contributions".to_owned(), signal(false)),
     ];
     let darkmode = Darkmode::init();
 

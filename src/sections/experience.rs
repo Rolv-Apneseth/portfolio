@@ -24,11 +24,14 @@ impl ExperienceData {
         techs: impl IntoIterator<Item = Tech>,
     ) -> Self {
         Self {
-            workplace: workplace.to_string(),
-            workplace_href: workplace_href.to_string(),
-            position: position.to_string(),
-            description: description.iter().map(|s| s.to_string()).collect(),
-            range: [range[0].to_string(), range[1].to_string()],
+            workplace: workplace.to_owned(),
+            workplace_href: workplace_href.to_owned(),
+            position: position.to_owned(),
+            description: description
+                .iter()
+                .map(std::string::ToString::to_string)
+                .collect(),
+            range: [range[0].to_owned(), range[1].to_owned()],
             techs: techs.into_iter().collect(),
         }
     }

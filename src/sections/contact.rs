@@ -10,8 +10,8 @@ pub struct ContactLinkData {
 impl ContactLinkData {
     fn new(label: &str, href: &str, icon: IconData) -> Self {
         Self {
-            label: label.to_string(),
-            href: href.to_string(),
+            label: label.to_owned(),
+            href: href.to_owned(),
             icon,
         }
     }

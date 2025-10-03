@@ -216,8 +216,16 @@ impl ProjectData {
         Self {
             title: input.0.into(),
             path_image: format!("/public/project_demos/{}", input.1),
-            urls: input.2.iter().map(|s| s.to_string()).collect(),
-            description: input.3.iter().map(|s| s.to_string()).collect(),
+            urls: input
+                .2
+                .iter()
+                .map(std::string::ToString::to_string)
+                .collect(),
+            description: input
+                .3
+                .iter()
+                .map(std::string::ToString::to_string)
+                .collect(),
             techs: input.4.to_vec(),
         }
     }

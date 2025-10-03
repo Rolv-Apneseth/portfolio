@@ -79,7 +79,7 @@ impl ContributionsData {
         Self {
             url,
             prs,
-            title: title.to_string(),
+            title: title.to_owned(),
         }
     }
 }
@@ -100,7 +100,6 @@ pub fn Contributions(#[prop()] data: ContributionsData) -> impl IntoView {
     let pr_views = data
         .prs
         .iter()
-        .cloned()
         .map(|pr| {
             let fill = match pr.state.as_str() {
                 "closed" => "fill-violet-700 dark:fill-purple-500",
@@ -180,8 +179,8 @@ pub fn ContributionsSection() -> impl IntoView {
                 <aside class="mb-3 text-sm italic">
                     Open source contributions fetched using the
                     <ExternalLink
-                        href="https://docs.github.com/en/rest?apiVersion=2022-11-28".to_string()
-                        content="GitHub API".to_string()
+                        href="https://docs.github.com/en/rest?apiVersion=2022-11-28".to_owned()
+                        content="GitHub API".to_owned()
                     />
                 </aside>
                 <ul class="flex flex-col gap-1 group/list">{contribution_views}</ul>
