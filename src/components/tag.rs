@@ -45,6 +45,7 @@ pub enum Tech {
     Sqlx,
     Ratatui,
     Rusqlite,
+    Bash,
 }
 
 impl fmt::Display for Tech {
@@ -95,6 +96,7 @@ impl fmt::Display for Tech {
                 Tech::Docker => "Docker",
                 Tech::Ratatui => "Ratatui",
                 Tech::Rusqlite => "Rusqlite",
+                Tech::Bash => "Bash",
             }
         )
     }

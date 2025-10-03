@@ -9,6 +9,35 @@ use crate::components::tag::{
 type ProjectDataInput<'a> = (&'a str, &'a str, &'a [&'a str], &'a [&'a str], &'a [Tech]);
 const PROJECTS: &[ProjectDataInput] = &[
     (
+        "rgd · Installed game detection utility for Linux",
+        "rgd.webp",
+        &[
+            "https://github.com/Rolv-Apneseth/rgd",
+            "https://crates.io/crates/rgd",
+        ],
+        &[
+            "A CLI utility intended to be a more broadly applicable version of rofi-games (listed below) so it can be used by a wider audience.",
+            "Detects games installed on a user's system from various sources in less than 5ms, allowing it to be a powerful way to get details for or launch specific games without opening slow and clunky launcher UIs.",
+            "Easily scriptable by design, allowing users to write their own scripts or adapt the extensive provided Bash scripts to fit their needs."
+        ],
+        &[Tech::Rust, Tech::Bash],
+    ),
+    (
+        "clipvault · Clipboard history manager for Wayland",
+        "clipvault.webp",
+        &[
+            "https://github.com/Rolv-Apneseth/clipvault",
+            "https://crates.io/crates/clipvault",
+        ],
+        &[
+            "A clipboard history manager for Wayland, allowing users to reuse previously copied text and other data.",
+            "Avoid data loss by storing clipboard data byte-for-byte in a database file using SQLite.",
+            "Previews of stored data (including images and other binary data) allows users to easily find the previously copied data they're looking for.",
+            "The CLI interface is designed to be scriptable, allowing users to either write their own scripts, or adapt the provided Bash scripts to fit their needs."
+        ],
+        &[Tech::Rust, Tech::Sqlite, Tech::Bash],
+    ),
+    (
         "omaro · TUI for lobste.rs",
         "omaro.webp",
         &[
