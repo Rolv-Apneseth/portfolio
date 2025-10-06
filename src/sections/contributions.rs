@@ -127,7 +127,7 @@ pub fn Contributions(#[prop()] data: ContributionsData) -> impl IntoView {
         .collect_view();
 
     view! {
-        <li class="py-4 rounded-md transition-all duration-300 ps-2 motion-reduce:transition-none lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:hover:bg-slate-300/20 lg:dark:hover:bg-slate-800/50 lg:hover:shadow[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
+        <li class="py-4 rounded-md transition-all duration-300 ps-2 motion-reduce:transition-none dark:hover:bg-slate-800/50 group-hover/list:opacity-50 hover:!opacity-100 hover:bg-slate-300/20 hover:shadow[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg">
             <a
                 class="text-slate-700 dark:text-slate-200"
                 href=data.url

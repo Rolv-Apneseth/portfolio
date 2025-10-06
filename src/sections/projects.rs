@@ -264,7 +264,7 @@ pub fn Project(#[prop()] data: ProjectData) -> impl IntoView {
     };
 
     view! {
-        <li class="flex flex-col gap-3 py-6 px-3 rounded-md duration-300 sm:grid sm:grid-cols-8 lg:flex lg:hover:!opacity-100 lg:group-hover/list:opacity-50 lg:hover:bg-slate-300/20 lg:dark:hover:bg-slate-800/50 lg:hover:shadow[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:hover:drop-shadow-lg">
+        <li class="flex flex-col gap-3 py-6 px-3 rounded-md duration-300 sm:grid sm:grid-cols-8 lg:flex group-hover/list:opacity-50 hover:bg-slate-800/50 hover:drop-shadow-lg hover:!opacity-100 hover:shadow[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:bg-slate-300/20">
             <header class="flex gap-4 justify-between sm:col-span-8">
                 <h4 class="text-sm font-semibold leading-snug text-slate-800 dark:text-slate-200">
                     {data.title}
